@@ -31,10 +31,10 @@
           class="flex flex-col items-center gap-2 mb-4 text-white sm:flex-row sm:justify-around sm:gap-4"
         >
           <li> <a href="#inicio">Inicio</a></li>
-          <li><a href="servicios">Servicios</a></li>
-          <li><a href="sobre-mi">Sobre Mi</a></li>
-          <li><a href="beneficios">Beneficios</a></li>
-          <li><a href="contacto">Contacto</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#sobre-mi">Sobre Mi</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
       <nav class="border-t border-t-amber-500 mt-4 pt-2">
@@ -121,6 +121,64 @@
 
       <section id="servicios"></section>
       <section id="sobre-mi"></section>
+
+      <!--Seccion Beneficios-->
+      <section id="beneficios" class="py-20 px-4 relative overflow-hidden">
+        <!-- Capas de fondo -->
+        <div class="absolute inset-0 bg-gradient-to-br from-red-900 via-stone-900 to-red-950"></div> <!-- Degradiente de fondo (usa tonos oscuros de rojo y piedra) -->
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_70%,rgba(245,158,11,0.1),transparent_70%)]"></div><!-- Fondo radial (ámbar translúcido) -->
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(153,27,27,0.1),transparent_70%)]"></div><!-- Fondo radial (rojo translúcido) -->
+
+        <!-- Contenedor principal centrado, relativo y superpuesto a las capas -->
+        <div class="container mx-auto relative z-10">
+          <!-- Contenedor con texto centrado y con espacio debajo -->
+            <div class="text-center mb-16">
+              <!-- Contenedor flex con fondo y borde rojo translúcido -->
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-500/20 text-red-400 border border-red-500/30 backdrop-blur-sm mb-4">
+                    ⭐ ¿Por qué elegirme?
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-red-200 bg-clip-text text-transparent">
+                    Ventajas Profesionales
+                </h2>
+            </div>
+
+            <!-- Contenedor grid con dos columnas para md y 4 columnas para lg -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center group">
+                  <!-- Circulo amarillo animado -->
+                    <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform shadow-xl">
+                        <img class="h-8 w-8 text-stone-900" src="assets/time.svg" alt="experiencia-icon">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Ahorro de Tiempo</h3>
+                    <p class="text-stone-300">Procesamos tus declaraciones en tiempo récord</p>
+                </div>
+
+                <div class="text-center group">
+                    <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform shadow-xl">
+                        <img class="h-8 w-8 text-stone-900" src="assets/check.svg" alt="experiencia-icon">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">100% Confiable</h3>
+                    <p class="text-stone-300">Garantizamos la correcta presentación de tus documentos</p>
+                </div>
+
+                <div class="text-center group">
+                    <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform shadow-xl">
+                        <img class="h-8 w-8 text-stone-900" src="assets/experience.svg" alt="experiencia-icon">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Experiencia Comprobada</h3>
+                    <p class="text-stone-300">Más de 10 años ayudando a contribuyentes</p>
+                </div>
+
+                <div class="text-center group">
+                    <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform shadow-xl">
+                        <img class="h-8 w-8 text-stone-900" src="assets/thunder.svg" alt="experiencia-icon">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Proceso Ágil</h3>
+                    <p class="text-stone-300">Tecnología de punta para trámites más rápidos</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     </main>
   </body>
