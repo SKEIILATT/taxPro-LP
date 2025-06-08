@@ -180,6 +180,246 @@
         </div>
     </section>
 
+    <!--Seccion Servicios-->
+    <section id="servicios" class="py-20 px-4 relative overflow-hidden">
+      <!-- Capas de fondo -->
+        <div class="absolute inset-0 bg-gradient-to-br from-stone-900 via-red-950 to-stone-800"></div> <!-- Degradiente de fondo (usa tonos oscuros de rojo y piedra) -->
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(245,158,11,0.05),transparent_70%)]"></div> <!-- Capa de fondo (luz suave y translúcida) -->
+
+        <!-- Contenedor principal centrado, relativo y superpuesto a las capas -->
+        <div class="container mx-auto relative z-10">
+          <!-- Contenedor con texto centrado y con espacio debajo -->
+            <div class="text-center mb-16">
+              <!-- Contenedor flex con fondo y borde amarillo translúcido -->
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 backdrop-blur-sm mb-4">
+                    🎯 Mis Servicios
+                </span>
+                <!-- Título grande, en negrita y con un degradado -->
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent">
+                    Servicios Tributarios Especializados
+                </h2>
+                <!-- Parrafo secundario con ancho maximo para 2xl y centrado -->
+                <p class="text-xl text-stone-300 max-w-2xl mx-auto">
+                    Ofrezco una gama completa de servicios profesionales para todas tus necesidades tributarias ante el SRI
+                </p>
+            </div>
+
+            <!-- Contenedor grid con 2 columnas para md y 3 columnas para lg -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <!-- Contenedor redondeado, translucido, animado y escable al pasar el mouse-->
+                <div class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm hover:scale-105 hover:border-amber-500/50 rounded-lg overflow-hidden">
+                    <div class="p-6">
+                      <!-- Contenedor flex para logo y nombre-->
+                        <div class="flex items-center space-x-3 mb-4">
+                            <!-- Cuadro amarillo, animado y redondeado para logo-->
+                            <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-3 rounded-lg group-hover:scale-110 transition-transform shadow-lg">
+                                <img class="h-6 w-6 text-stone-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/impuestos.svg" alt="tax-icon">
+                            </div>
+                            <h3 class="text-lg font-semibold text-white">Declaración de Impuestos</h3>
+                        </div>
+                        <p class="text-stone-300 mb-4">Declaración y devoluciones de impuestos de manera rápida y segura</p>
+                        <ul class="space-y-2 mb-6">
+                          <!-- Lista flex para viñeta y descripcion-->
+                            <li class="flex items-center space-x-2">
+                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                <span class="text-sm text-stone-300">Impuesto a la renta</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                <span class="text-sm text-stone-300">Declaraciones anuales</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                <span class="text-sm text-stone-300">Asesoría personalizada</span>
+                            </li>
+                        </ul>
+                        <!-- Boton redondeado amarillo, animado para solicitar servicio-->
+                        <button class="w-full px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-stone-900 font-semibold shadow-lg rounded-lg transition-all duration-200">
+                            Solicitar Servicio
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Servicio 2 -->
+                <!-- Contenedor redondeado, translucido, animado y escable al pasar el mouse-->
+                <div class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm hover:scale-105 hover:border-amber-500/50 rounded-lg overflow-hidden">
+                    <div class="p-6">
+                        <!-- Contenedor flex para logo y nombre-->
+                        <div class="flex items-center space-x-3 mb-4">
+                            <!-- Cuadro amarillo, animado y redondeado para logo-->
+                            <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-3 rounded-lg group-hover:scale-110 transition-transform shadow-lg">
+                                <img class="h-6 w-6 text-stone-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/card.svg" alt="tax-icon">
+                            </div>
+                            <h3 class="text-lg font-semibold text-white">Declaración del IVA</h3>
+                        </div>
+                        <p class="text-stone-300 mb-4">Gestión completa de declaraciones de IVA mensuales y semestrales</p>
+                        <ul class="space-y-2 mb-6">
+                          <!-- Lista flex para viñeta y descripcion-->
+                            <li class="flex items-center space-x-2">
+                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                <span class="text-sm text-stone-300">IVA mensual</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                <span class="text-sm text-stone-300">IVA semestral</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                <span class="text-sm text-stone-300">Formularios 104 y 104A</span>
+                            </li>
+                        </ul>
+                        <!-- Boton redondeado amarillo, animado para solicitar servicio-->
+                        <button class="w-full px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-stone-900 font-semibold shadow-lg rounded-lg transition-all duration-200">
+                            Solicitar Servicio
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Servicio 3 -->
+                <!-- Contenedor redondeado, translucido, animado y escable al pasar el mouse--> 
+                <div class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm hover:scale-105 hover:border-amber-500/50 rounded-lg overflow-hidden">
+                    <div class="p-6">
+                        <!-- Contenedor flex para logo y nombre-->
+                        <div class="flex items-center space-x-3 mb-4">
+                            <!-- Cuadro amarillo, animado y redondeado para logo-->
+                            <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-3 rounded-lg group-hover:scale-110 transition-transform shadow-lg">
+                                <img class="h-6 w-6 text-stone-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/note.svg" alt="tax-icon">
+                            </div>
+                            <h3 class="text-lg font-semibold text-white">Anexos de Gastos Personales</h3>
+                        </div>
+                        <p class="text-stone-300 mb-4">Preparación y presentación de anexos para deducción de gastos</p>
+                        <ul class="space-y-2 mb-6">
+                          <!-- Lista flex para viñeta y descripcion-->
+                            <li class="flex items-center space-x-2">
+                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                <span class="text-sm text-stone-300">Gastos médicos</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                <span class="text-sm text-stone-300">Educación</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                <span class="text-sm text-stone-300">Vivienda</span>
+                            </li>
+                        </ul>
+                        <!-- Boton redondeado amarillo, animado para solicitar servicio-->
+                        <button class="w-full px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-stone-900 font-semibold shadow-lg rounded-lg transition-all duration-200">
+                            Solicitar Servicio
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Servicio 4 -->
+                <!-- Contenedor redondeado, translucido, animado y escable al pasar el mouse--> 
+                <div class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm hover:scale-105 hover:border-amber-500/50 rounded-lg overflow-hidden">
+                    <div class="p-6">
+                        <!-- Contenedor flex para logo y nombre-->
+                        <div class="flex items-center space-x-3 mb-4">
+                            <!-- Cuadro amarillo, animado y redondeado para logo-->
+                            <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-3 rounded-lg group-hover:scale-110 transition-transform shadow-lg">
+                                <img class="h-6 w-6 text-stone-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/people.svg" alt="tax-icon">
+                            </div>
+                            <h3 class="text-lg font-semibold text-white">Devoluciones Especiales</h3>
+                        </div>
+                        <p class="text-stone-300 mb-4">Devoluciones de IVA para personas de 3era edad y discapacitados</p>
+                        <ul class="space-y-2 mb-6">
+                            <!-- Lista flex para viñeta y descripcion-->
+                            <li class="flex items-center space-x-2">
+                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                <span class="text-sm text-stone-300">Tercera edad</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                <span class="text-sm text-stone-300">Discapacitados</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                <span class="text-sm text-stone-300">Trámites especializados</span>
+                            </li>
+                        </ul>
+                        <!-- Boton redondeado amarillo, animado para solicitar servicio-->
+                        <button class="w-full px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-stone-900 font-semibold shadow-lg rounded-lg transition-all duration-200">
+                            Solicitar Servicio
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Servicio 5 -->
+                <!-- Contenedor redondeado, translucido, animado y escable al pasar el mouse--> 
+                <div class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm hover:scale-105 hover:border-amber-500/50 rounded-lg overflow-hidden">
+                    <div class="p-6">
+                        <!-- Contenedor flex para logo y nombre-->
+                        <div class="flex items-center space-x-3 mb-4">
+                            <!-- Cuadro amarillo, animado y redondeado para logo-->
+                            <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-3 rounded-lg group-hover:scale-110 transition-transform shadow-lg">
+                                <img class="h-6 w-6 text-stone-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/reverse.svg" alt="tax-icon">
+                                </svg>
+                            </div>
+                            <h3 class="text-lg font-semibold text-white">Devolución de Retenciones</h3>
+                        </div>
+                        <p class="text-stone-300 mb-4">Gestión de devoluciones de retenciones en la fuente</p>
+                        <ul class="space-y-2 mb-6">
+                            <!-- Lista flex para viñeta y descripcion-->
+                            <li class="flex items-center space-x-2">
+                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                <span class="text-sm text-stone-300">Retenciones IR</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                <span class="text-sm text-stone-300">Retenciones IVA</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                <span class="text-sm text-stone-300">Seguimiento de trámites</span>
+                            </li>
+                        </ul>
+                        <!-- Boton redondeado amarillo, animado para solicitar servicio-->
+                        <button class="w-full px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-stone-900 font-semibold shadow-lg rounded-lg transition-all duration-200">
+                            Solicitar Servicio
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Servicio 6 -->
+                <!-- Contenedor redondeado, translucido, animado y escable al pasar el mouse--> 
+                <div class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm hover:scale-105 hover:border-amber-500/50 rounded-lg overflow-hidden">
+                    <div class="p-6">
+                        <!-- Contenedor flex para logo y nombre-->
+                        <div class="flex items-center space-x-3 mb-4">
+                            <!-- Cuadro amarillo, animado y redondeado para logo-->
+                            <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-3 rounded-lg group-hover:scale-110 transition-transform shadow-lg">
+                                <img class="h-6 w-6 text-stone-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/shield.svg" alt="tax-icon">
+                            </div>
+                            <h3 class="text-lg font-semibold text-white">Gestión de RUC</h3>
+                        </div>
+                        <p class="text-stone-300 mb-4">Obtención, actualización y regularización del RUC</p>
+                        <ul class="space-y-2 mb-6">
+                            <!-- Lista flex para viñeta y descripcion-->
+                            <li class="flex items-center space-x-2">
+                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                <span class="text-sm text-stone-300">Nuevo RUC</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                <span class="text-sm text-stone-300">Actualización</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                <span class="text-sm text-stone-300">Firma electrónica</span>
+                            </li>
+                        </ul>
+                        <!-- Boton redondeado amarillo, animado para solicitar servicio-->
+                        <button class="w-full px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-stone-900 font-semibold shadow-lg rounded-lg transition-all duration-200">
+                            Solicitar Servicio
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     </main>
   </body>
 </html>
