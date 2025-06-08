@@ -636,6 +636,145 @@
     </div>
 </section>
 
+<!-- Seccion visitame en mi oficina-->
+<!-- Contenedor principal con fondo degradado y radial -->
+<section id="vistame" class="py-20 px-4 relative overflow-hidden">
+    <!-- Capas de fondo -->
+    <div class="absolute inset-0 bg-gradient-to-br from-stone-900 via-red-950 to-stone-800"></div> <!-- Degradado de fondo (usa tonos oscuros de piedra y rojo) -->
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_40%_60%,rgba(245,158,11,0.1),transparent_70%)]"></div> <!-- Capa de fondo (luz suave y translúcida) -->
+
+    <!-- Contenedor principal centrado, relativo y superpuesto a las capas -->
+    <div class="container mx-auto relative z-10">
+        <!-- Contenedor con texto centrado y con espacio debajo -->
+        <div class="text-center mb-16">
+            <!-- Contenedor flex con fondo y borde ámbar translúcido -->
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-amber-500/20 text-amber-400 border border-amber-500/30 backdrop-blur-sm mb-4">
+                📍 Mi Oficina
+            </span>
+            <!-- Título grande, en negrita y con un degradado -->
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-amber-200 bg-clip-text text-transparent">
+                Visítame en Mi Oficina
+            </h2>
+            <!-- Parrafo secundario con ancho maximo para 2xl y centrado -->
+            <p class="text-xl text-stone-300 max-w-2xl mx-auto">
+                Ubicada en el corazón financiero de Quito, fácil acceso y estacionamiento disponible
+            </p>
+        </div>
+
+        <!-- Contenedor grid con 2 columnas para lg -->
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                 <!-- Contenedor redondeado, translucido y con sombra para direccion -->
+                <div class="p-6 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm shadow-xl rounded-lg">
+                    <!-- Contenedor flex para icono y texto -->
+                    <div class="flex items-start space-x-4">
+                      <!-- Cuadro de color amarillo para el icono de ubicacion-->
+                        <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-3 rounded-lg shadow-lg">
+                            <img class="h-6 w-6 text-stone-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/location.svg" alt="location-icon">
+                        </div>
+                        <div>
+                            <!-- Titulo y direccion de la oficina -->
+                            <h3 class="text-xl font-semibold mb-2 text-white">Dirección de la Oficina</h3>
+                            <p class="text-stone-300 mb-2">Avda. Pedro Menéndez Gilbert</p>
+                            <p class="text-stone-300 mb-2">Junto a la Cdla. La Atarazana, 090150, Guayaquil</p>
+                            <p class="text-stone-300">Guayas, Guayaquil, Ecuador</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenedor redondeado, translucido y con sombra para horarios -->
+                <div class="p-6 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm shadow-xl rounded-lg">
+                  <!-- Contenedor flex para icono y texto -->
+                    <div class="flex items-start space-x-4">
+                        <!-- Cuadro de color rojo para el icono de horario-->
+                        <div class="bg-gradient-to-r from-red-700 to-red-600 p-3 rounded-lg shadow-lg">
+                            <img class="h-6 w-6 text-stone-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/reloj.svg" alt="location-icon">
+                        </div>
+                        <div>
+                            <!-- Titulo y horarios de atencion -->
+                            <h3 class="text-xl font-semibold mb-2 text-white">Horarios de Atención</h3>
+                            <div class="space-y-1 text-stone-300">
+                                <p>Lunes a Viernes: 8:00 AM - 5:00 PM</p>
+                                <p>Sábados: Cerrado</p>
+                                <p>Domingos: Cerrado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenedor redondeado, translucido y con sombra para contacto directo -->
+                <div class="p-6 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm shadow-xl rounded-lg">
+                    <!-- Contenedor flex para icono y texto -->
+                    <div class="flex items-start space-x-4">
+                        <!-- Cuadro de color naranja para el icono de contacto-->
+                        <div class="bg-gradient-to-r from-orange-600 to-amber-600 p-3 rounded-lg shadow-lg">
+                            <img class="h-6 w-6 text-stone-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/phone.svg" alt="location-icon">
+                        </div>
+                        <div>
+                            <!-- Titulo y datos de contacto directo -->
+                            <h3 class="text-xl font-semibold mb-2 text-white">Contacto Directo</h3>
+                            <div class="space-y-1 text-stone-300">
+                                <p>📞 Teléfono: +593 2 123-4567</p>
+                                <p>📱 WhatsApp: +593 99 123-4567</p>
+                                <p>✉️ Email: maria.rodriguez@taxpro.ec</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mapa -->
+            <div class="relative">
+                <!-- Contenedor amarillo redondeado, translucido y con sombra que rodea a el mapa -->
+                <div class="bg-gradient-to-br from-amber-500/20 to-yellow-500/20 rounded-2xl p-4 shadow-2xl backdrop-blur-sm border border-white/20">
+                  <!-- Contenedor translucido, redondedado y con sombra que contiene el mapa de google --> 
+                    <div class="bg-gradient-to-br from-white/10 to-white/5 rounded-xl overflow-hidden shadow-2xl backdrop-blur-sm border border-white/20">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7973.893070935756!2d-79.88245542587904!3d-2.174017697806684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6dc92475da2f%3A0x8a49d6ab23e428f4!2sSociedad%20de%20Lucha%20contra%20el%20C%C3%A1ncer%20del%20Ecuador!5e0!3m2!1ses!2sec!4v1749346836628!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <!-- Indicadores de estado -->
+                <div class="absolute -top-4 -right-4 bg-gradient-to-r from-amber-500/90 to-yellow-500/90 backdrop-blur-sm rounded-lg shadow-xl p-3 border border-white/20">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-3 h-3 bg-white rounded-full animate-pulse"></div>
+                        <span class="text-sm font-medium text-stone-900">Abierto Ahora</span>
+                    </div>
+                </div>
+
+                <!-- Indicador de estacionamiento -->
+                <div class="absolute -bottom-4 -left-4 bg-gradient-to-r from-red-700/90 to-red-600/90 backdrop-blur-sm rounded-lg shadow-xl p-3 border border-white/20">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-3 h-3 bg-white rounded-full"></div>
+                        <span class="text-sm font-medium text-white">Estacionamiento</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Características Adicionales -->
+        <div class="text-center mt-12">
+          <!-- Comentenedor grid con 3 columnas para md -->
+            <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <!-- Contenedor flex redondeado y centrado para Característica 1 -->
+                <div class="flex items-center justify-center space-x-2 text-stone-300 bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10">
+                    <img class="h-5 w-5 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="metro-icon">
+                    <span>Fácil Acceso en Transporte Público</span>
+                </div>
+                <!-- Contenedor flex redondeado y centrado para Característica 2 -->
+                <div class="flex items-center justify-center space-x-2 text-stone-300 bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10">
+                    <img class="h-5 w-5 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="metro-icon">
+                    <span>Estacionamiento Disponible</span>
+                </div>
+                <!-- Contenedor flex redondeado y centrado para Característica 3 -->
+                <div class="flex items-center justify-center space-x-2 text-stone-300 bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10">
+                    <img class="h-5 w-5 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="metro-icon">
+                    <span>Zona Segura y Comercial</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 </main>
 </body>
 </html>
