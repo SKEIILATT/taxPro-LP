@@ -13,7 +13,7 @@
     />
     <title>TaxProEC</title>
   </head>
-  <body>
+  <body >
     <header class="bg-[#332C23]  top-0 z-50 sm:sticky">
       <div class="flex justify-center mb-4">
         <img
@@ -85,42 +85,42 @@
       </nav>
     </header>
     <main>
-      <section id="inicio" class="bg-amber-950 p-4">
-        <p class="text-lg bg-amber-500 text-zinc-900 border border-amber-500 backdrop-blur px-4 py-2 rounded-lg ">
-          Servicios Tributarios Profesionales
-        </p>
-        <div class="flex flex-col">
+      <section id="inicio" class="bg-gradient-to-br from-stone-900 via-red-950 to-stone-800 p-4 sm:grid grid-cols-2">
+        <div>
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 backdrop-blur-sm mb-4">
+                    🎯 Servicios Tributarios Profesionales
+            </span>
+            <div class="flex flex-col">
           <h1 class="text-5xl text-white">Declaraciones de Impuestos <span class="text-amber-500">Profesionales y Confiables</span></h1>
-          <p class="text-white p-1 text-lg">Especialista certificado en declaraciones de IVA, Impuesto a la Renta, gestión de RUC, devoluciones especiales y todos los trámites ante el SRI. Tu tranquilidad tributaria es mi prioridad.</p>
+          <p class="text-gray-200 p-1 text-lg">Especialista certificado en declaraciones de IVA, Impuesto a la Renta, gestión de RUC, devoluciones especiales y todos los trámites ante el SRI. Tu tranquilidad tributaria es mi prioridad.</p>
         </div>
-        <div class="flex flex-col">
-          <button class="bg-amber-500 mt-4 mb-4 py-3 cursor-pointer"> Comenzar ahora </button>
-          <button class="bg-white mb-4 py-3 cursor-pointer" > Ver Servicios</button>
+        <div class="flex flex-col font-bold sm:flex-row">
+          <button class="bg-amber-500 mt-4 mb-2 py-3 cursor-pointer rounded-xl sm:w-max h-max py-4 px-4 mr-2"> Comenzar ahora </button>
+          <button class="bg-white mb-4 py-3 cursor-pointer rounded-xl sm:w-max h-max py-4 px-4 my-4" > Ver Servicios</button>
         </div>
-        <div class="grid grid-cols-2 grid-rows-2 gap-4 my-6">
+        <div class="grid grid-cols-2 grid-rows-2 gap-4 my-6 sm:flex flex-row mt-15 ">
           <div>
-            <p class="flex flex-col text-white p-4 border border-gray-3 text-center rounded-md"><span class="text-amber-500 text-3xl">+500</span> Clientes Satisfechos</p>
+            <p class="flex flex-col bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10 text-gray-200 text-center rounded-md h-max "><span class="text-amber-500 text-3xl">+500</span> Clientes Satisfechos</p>
           </div>
           <div>
-            <p class="flex flex-col text-white p-4 border border-gray-3 text-center rounded-md"><span class="text-amber-500 text-3xl">98%</span> Éxito en Trámites Realizados</p>
+            <p class="flex flex-col bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10 text-white text-center rounded-md h-max"><span class="text-amber-500 text-3xl ">98%</span> Éxito en Trámites Realizados</p>
           </div>
-          <div>
-            <p class="flex flex-col text-white p-4 border border-gray-3 text-center rounded-md"><span class="text-amber-500 text-3xl">+24</span> Tiempo Promedio</p>
+          <div >
+            <p class="flex flex-col bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10 text-white text-center rounded-md h-max"><span class="text-amber-500 text-3xl">24h</span> Tiempo Promedio de resolución</p>
           </div>
-          <div>
-            <p class="flex flex-col text-white p-4 border border-gray-3 text-center rounded-md"><span class="text-amber-500 text-3xl">+10</span> Años de Experiencia</p>
+          <div >
+            <p class="flex flex-col bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10 text-white text-center rounded-md h-max"><span class="text-amber-500 text-3xl">+10</span> Años de Experiencia</p>
           </div>
-
         </div>
-        <figure class="p-6 bg-white rounded-lg">
-          <img class="w-auto h-50" src="assets/foto-perfil.jpg" alt="foto-perfil">
-          <figcaption class="bg-amber-950 border border-white rounded-md w-30 mt-2 py-4 px-2 text-white">+10 años Exp</figcaption>
+        </div>
+        
+        <figure class="p-6 rounded-lg">
+          <img class="w-80 h-40 rounded-2xl sm:w-auto h-102" src="assets/foto-perfil.jpg" alt="foto-perfil">
+          <figcaption class="flex flex-col bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10 text-white text-center w-30 mt-2 py-4 px-2 text-white">+10 años Exp</figcaption>
         </figure>
 
 
       </section>
-
-      <section id="servicios"></section>
       <section id="sobre-mi"></section>
 
     <!--Seccion Servicios-->
@@ -789,10 +789,43 @@
         </div>
     </section>
     </main>
-    <footer>
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ipsa, adipisci, numquam quia nobis repellendus ducimus molestias sequi distinctio atque suscipit deleniti perspiciatis dolor accusamus. Harum, fugiat maiores? Libero, illum.</p>
+    <footer class="flex flex-col bg-stone-700 p-8 sm:grid grid-cols-4 gap-10" >
+        <div class="flex flex-row mb-4">
+            <img class="w-15 h-15 sm:w-14 sm:h-15 rounded-full bg-amber-500 p-2 mr-2 mt-2" src="assets/calculator2.svg" alt="logo-calculator"/>
+            <div>
+            <h2 class="text-amber-500 mt-2 font-bold text-3xl">TaxPro Ecuador</h2>
+            <h4 class="text-gray-400  text-base">Tu contadora de confianza para todos los trámites tributarios ante el SRI.</h4>
+            </div>
         </div>
+        <div class="mb-4">
+            <h2 class="text-2xl text-white mb-3 ">Servicios</h2>
+            <ul class="text-gray-400">
+                <li>Declaración de Iva</li>
+                <li>Impuesto a la renta</li>
+                <li>Gestión de RUC</li>
+                <li>Devoluciones</li>
+            </ul>
+        </div>
+        <div class="mb-4">
+            <h2 class="text-2xl text-white mb-3">Información</h2>
+            <ul class="text-gray-400">
+                <li>Sobre Mi</li>
+                <li>Casos de Éxito</li>
+                <li>Blog Tributario</li>
+            </ul>
+        </div>
+        <div class="mb-4">
+            <h2 class="text-2xl text-white mb-3">Contacto</h2>
+            <ul class="text-gray-400">
+                <li>+593 0000xxxxx000xx</li>
+                <li>maria.rodriguez@taxpro.ec</li>
+                <li>Guayaquil-Ecuador</li>
+            </ul>
+        </div>
+        <div class="border-t border-t-amber-500 text-center text-gray-300 mt-4 sm:col-span-4">
+            <p>© 2024 CPA. María Elena Rodríguez - TaxPro Ecuador. Todos los derechos reservados.</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
