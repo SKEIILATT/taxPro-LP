@@ -113,16 +113,20 @@
           </div>
         </div>
         </div>
-        
-        <figure class="flex p-6 rounded-lg sm:flex flex-col items-center ">
-          <img class="w-80 h-40 rounded-2xl sm:w-130 h-105 " src="assets/fotoperfil.png" alt="foto-perfil">
+                
+        <figure class="flex justify-center items-center p-4 sm:p-6 rounded-lg">
+        <img 
+            class="w-80 max-w-xs  sm:max-w-md h-auto rounded-2xl object-cover" 
+            src="assets/fotoperfil.png" 
+            alt="foto-perfil"
+        >
         </figure>
 
 
       </section>
       <section id="sobre-mi">
-        <div class="grid grid-cols-2 bg-gradient-to-br from-stone-900 via-red-950 to-stone-800 p-4">
-          <div class="container mx-auto text-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 bg-gradient-to-br from-stone-900 via-red-950 to-stone-800 p-4 md:p-8 gap-8 items-center">
+          <div class="container mx-auto text-center md:text-left px-2">
             <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 backdrop-blur-sm mb-4">
               👩‍💼 Sobre Mi
             </span>
@@ -132,40 +136,43 @@
             <p class="text-lg text-stone-300 max-w-2xl mx-auto mb-8">
               Soy Gina Arteaga, especialista en servicios tributarios con más de 5 años de experiencia ayudando a contribuyentes a cumplir con sus obligaciones fiscales de manera eficiente y confiable.
             </p>
-            <ul class="flex flex-col items-center mb-6 ">
-                          <!-- Lista flex para viñeta y descripcion-->
-                            <li class="flex items-center space-x-2 mb-5">
-                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
-                                <span class="text-sm text-stone-300 text-2xl">Impuesto a la renta</span>
-                            </li>
-                            <li class="flex items-center space-x-2 mb-5">
-                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
-                                <span class="text-sm text-stone-300">Declaraciones anuales</span>
-                            </li>
-                            <li class="flex items-center space-x-2 mb-5">
-                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
-                                <span class="text-sm text-stone-300">Asesoría personalizada</span>
-                            </li>
-                        </ul>
-            <p class="text-stone-300 text-wrap bg-transparent p-8 border border-orange-500 w-auto  ">"Mi compromiso es brindar un servicio personalizado y de calidad, asegurando que cada cliente cumpla con sus obligaciones tributarias de manera eficiente y sin complicaciones."</p>
+            <ul class="flex flex-col items-center md:items-start mb-6 space-y-3">
+              <li class="flex items-center space-x-2">
+                <img class="h-4 w-4 text-amber-400" src="assets/checkyellow.svg" alt="check-icon">
+                <span class="text-base text-stone-300">Impuesto a la renta</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <img class="h-4 w-4 text-amber-400" src="assets/checkyellow.svg" alt="check-icon">
+                <span class="text-base text-stone-300">Declaraciones anuales</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <img class="h-4 w-4 text-amber-400" src="assets/checkyellow.svg" alt="check-icon">
+                <span class="text-base text-stone-300">Asesoría personalizada</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <img class="h-4 w-4 text-amber-400" src="assets/checkyellow.svg" alt="check-icon">
+                <span class="text-base text-stone-300">Gestión de RUC y devoluciones</span>
+              </li>
+            </ul>
+            <blockquote class="text-stone-300 bg-transparent p-6 border-l-4 border-amber-500 italic rounded-md max-w-xl ">
+              "Mi compromiso es brindar un servicio personalizado y de calidad, asegurando que cada cliente cumpla con sus obligaciones tributarias de manera eficiente y sin complicaciones."
+            </blockquote>
           </div>
-          <div class="flex flex-col items-center justify-center p-6">
-            <p class=" text-black font-bold bg-amber-400 px-20 py-6 flex items-center space-x-2 mb-18 border border-amber-500/30 backdrop-blur-sm rounded-lg">
-              <img class="bg-red-700 p-4 rounded-2xl " src="assets/university_icon.svg" alt="logo-university">
-              <span>Ing.en "la carrera"</span>
-            </p>
-            <p class="text-black font-bold bg-amber-400 px-20 py-6 flex items-center space-x-2 mb-18 border border-amber-500/30 backdrop-blur-sm rounded-lg">
-              <img class="bg-red-700 p-4 rounded-2xl"  src="assets/achievement_icon.svg" alt="logo-university" >
-              <span>Especialista en --</span>
-            </p>
-            <p class="text-black font-bold bg-amber-400 px-20 py-6 flex items-center space-x-2  border border-amber-500/30 backdrop-blur-sm rounded-lg">
-              <img class="bg-red-700 p-4 rounded-2xl "  src="assets/work_icon.svg" alt="logo-university">
-              <span>Actualmente en</span>
-            </p>
+          <div class="flex flex-col items-center  md:justify-center gap-6 px-2 w-full">
+            <div class="bg-white px-8 py-4 flex items-center space-x-3 border border-amber-400/30 backdrop-blur-sm rounded-lg shadow-lg w-full max-w-xs">
+              <img class="bg-amber-500 p-3 rounded-2xl h-12 w-12" src="assets/university_icon.svg" alt="logo-university">
+              <span class="text-stone-900 font-bold">Ing. en Contabilidad y Auditoría</span>
+            </div>
+            <div class="bg-white px-8 py-4 flex items-center space-x-3 border border-amber-400/30 backdrop-blur-sm rounded-lg shadow-lg w-full max-w-xs">
+              <img class="bg-amber-500 p-3 rounded-2xl h-12 w-12" src="assets/achievement_icon.svg" alt="logo-achievement">
+              <span class="text-stone-900 font-bold">Especialista en Tributación SRI</span>
+            </div>
+            <div class="bg-white px-8 py-4 flex items-center space-x-3 border border-amber-400/30 backdrop-blur-sm rounded-lg shadow-lg w-full max-w-xs">
+              <img class="bg-amber-500 p-3 rounded-2xl h-12 w-12" src="assets/work_icon.svg" alt="logo-work">
+              <span class="text-stone-900 font-bold">Contadora Independiente</span>
+            </div>
           </div>
         </div>
-
-
       </section>
 
     <!--Seccion Servicios-->
@@ -411,7 +418,7 @@
           <!--Seccion Beneficios-->
       <section id="beneficios" class="py-20 px-4 relative overflow-hidden">
         <!-- Capas de fondo -->
-        <div class="absolute inset-0 bg-gradient-to-br from-red-900 via-stone-900 to-red-950"></div> <!-- Degradiente de fondo (usa tonos oscuros de rojo y piedra) -->
+        <div class="absolute inset-0 bg-gradient-to-br from-red-900 via-stone-900 to-red-950"></div> <!-- Degradado de fondo (usa tonos oscuros de rojo y piedra) -->
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_70%,rgba(245,158,11,0.1),transparent_70%)]"></div><!-- Fondo radial (ámbar translúcido) -->
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(153,27,27,0.1),transparent_70%)]"></div><!-- Fondo radial (rojo translúcido) -->
 
@@ -469,7 +476,7 @@
 <!-- Seccion Casos de exitos recientes -->
 <section id="casos-exito" class="py-20 px-4 relative overflow-hidden">
   <!-- Capas de fondo -->
-    <div class="absolute inset-0 bg-gradient-to-br from-stone-900 via-red-900 to-stone-800"></div> <!-- Degradiente de fondo (usa tonos oscuros de rojo y piedra) -->
+    <div class="absolute inset-0 bg-gradient-to-br from-stone-900 via-red-900 to-stone-800"></div> <!-- Degradante de fondo (usa tonos oscuros de rojo y piedra) -->
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_60%_40%,rgba(245,158,11,0.1),transparent_70%)]"></div> <!-- Capa de fondo (luz suave y translúcida) -->
 
     <!-- Contenedor principal centrado, relativo y superpuesto a las capas -->
@@ -1118,6 +1125,4 @@
     <!-- JavaScript para Interactividad -->
     <script src="./src/formulario.js"></script>
 </body>
-</html>
-  </body>
 </html>
