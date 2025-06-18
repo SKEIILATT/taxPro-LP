@@ -18,6 +18,7 @@
 - **Google Fonts** para tipografía profesional.
 - **SVGs personalizados** para íconos y elementos visuales.
 - **Google Maps Embed** para mostrar la ubicación de la oficina.
+- **JavaScript** para las funcionalidades de los botones.
 
 ## Público objetivo
 
