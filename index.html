@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,1091 +9,1523 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
     <title>TaxProEC</title>
-  </head>
-  <body >
+</head>
+
+<body>
     <header class="bg-stone-900 backdrop-blur-xl border-b border-amber-500  top-0 z-50 sm:sticky">
-      <div class="flex justify-center mb-4">
-        <img
-          class="w-15 h-15 sm:w-14 sm:h-15 rounded-full bg-amber-500 p-2 mr-2 mt-2"
-          src="assets/calculator2.svg"
-          alt="logo-calculator"/>
-        <div >
-          <h2 class="text-amber-500 mt-2 font-bold text-2xl mr-6">TaxPro Ecuador</h2>
-          <h4 class="text-gray-400  text-base">Servicios tributarios</h4>
+        <div class="flex justify-center mb-4">
+            <img class="w-15 h-15 sm:w-14 sm:h-15 rounded-full bg-amber-500 p-2 mr-2 mt-2" src="assets/calculator2.svg"
+                alt="logo-calculator" />
+            <div>
+                <h2 class="text-amber-500 mt-2 font-bold text-2xl mr-6">TaxPro Ecuador</h2>
+                <h4 class="text-gray-400  text-base">Servicios tributarios</h4>
+            </div>
         </div>
-      </div>
         <input id="menu-toggle" type="checkbox" class="hidden peer ">
-        <label for="menu-toggle" class="sm:hidden cursor-pointer flex flex-col justify-center items-center w-10 h-10 absolute right-4 top-4 z-50 ">
-              <span class="block w-8 h-1 bg-amber-500 mb-1 rounded transition-all"></span>
-              <span class="block w-8 h-1 bg-amber-500 mb-1 rounded transition-all"></span>
-              <span class="block w-8 h-1 bg-amber-500 mb-1 rounded transition-all"></span>
+        <label for="menu-toggle"
+            class="sm:hidden cursor-pointer flex flex-col justify-center items-center w-10 h-10 absolute right-4 top-4 z-50 ">
+            <span class="block w-8 h-1 bg-amber-500 mb-1 rounded transition-all"></span>
+            <span class="block w-8 h-1 bg-amber-500 mb-1 rounded transition-all"></span>
+            <span class="block w-8 h-1 bg-amber-500 mb-1 rounded transition-all"></span>
         </label>
         <nav class=" hidden peer-checked:block sm:block bg-stone-900 ">
-        <ul
-          class="flex flex-col items-center gap-2 mb-4 text-white sm:flex-row sm:justify-around sm:gap-4"
-        >
-          <li class="hover:bg-amber-800 px-3 py-1 border rounded-full border-transparent transition-colors duration-300"><a href="#inicio">Inicio</a></li>
-          <li class="hover:bg-amber-800 px-3 py-1 border rounded-full border-transparent transition-colors duration-300"><a href="#servicios">Servicios</a></li>
-          <li class="hover:bg-amber-800 px-3 py-1 border rounded-full border-transparent transition-colors duration-300"><a href="#sobre-mi">Sobre Mi</a></li>
-          <li class="hover:bg-amber-800 px-3 py-1 border rounded-full border-transparent transition-colors duration-300"><a href="#beneficios">Beneficios</a></li>
-          <li class="hover:bg-amber-800 px-3 py-1 border rounded-full border-transparent transition-colors duration-300"><a href="#casos-exito">Casos de Éxito</a></li>
-          <li class="hover:bg-amber-800 px-3 py-1 border rounded-full border-transparent transition-colors duration-300"><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-      <nav class="border-t border-t-amber-500 mt-4 pt-2">
-        <ul
-          class="flex flex-col items-center gap-2 text-white  sm:flex-row sm:justify-center sm:gap-10"
-        >
-          <li class="flex items-center mb-4">
-            <!-- Teléfono SVG -->
-            <svg
-              class="w-10 h-8 fill-amber-500 mr-2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 22 2 13.93 2 4.5A1 1 0 013 3.5h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"
-              />
-            </svg>
-            +593 95 927 3190
-          </li>
-          <li class="flex items-center mb-4">
-            <!-- Email SVG -->
-            <svg
-              class="w-10 h-8 fill-amber-500 mr-2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 20V8.99l8 6.99 8-6.99V20H4z"
-              />
-            </svg>
-            gina.arteaga.94@gmail.com
-          </li>
-          <li class="flex items-center mb-4">
-            <!-- Reloj SVG -->
-            <svg
-              class="w-10 h-8 fill-amber-500 mr-2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 1a11 11 0 1011 11A11.013 11.013 0 0012 1zm0 20a9 9 0 119-9 9.01 9.01 0 01-9 9zm.5-13h-1v6l5.25 3.15.5-.86-4.75-2.79z"
-              />
-            </svg>
-            Lun-Vie: 8AM-5PM
-          </li>
-        </ul>
-      </nav>
+            <ul class="flex flex-col items-center gap-2 mb-4 text-white sm:flex-row sm:justify-around sm:gap-4">
+                <li
+                    class="hover:bg-amber-800 px-3 py-1 border rounded-full border-transparent transition-colors duration-300">
+                    <a href="#inicio">Inicio</a></li>
+                <li
+                    class="hover:bg-amber-800 px-3 py-1 border rounded-full border-transparent transition-colors duration-300">
+                    <a href="#servicios">Servicios</a></li>
+                <li
+                    class="hover:bg-amber-800 px-3 py-1 border rounded-full border-transparent transition-colors duration-300">
+                    <a href="#sobre-mi">Sobre Mi</a></li>
+                <li
+                    class="hover:bg-amber-800 px-3 py-1 border rounded-full border-transparent transition-colors duration-300">
+                    <a href="#beneficios">Beneficios</a></li>
+                <li
+                    class="hover:bg-amber-800 px-3 py-1 border rounded-full border-transparent transition-colors duration-300">
+                    <a href="#casos-exito">Casos de Éxito</a></li>
+                <li
+                    class="hover:bg-amber-800 px-3 py-1 border rounded-full border-transparent transition-colors duration-300">
+                    <a href="#contacto">Contacto</a></li>
+                <li
+                    class="hover:bg-amber-800 px-3 py-1 border rounded-full border-transparent transition-colors duration-300">
+                    <a href="#reseñas">Reseñas</a></li>    
+            </ul>
+        </nav>
+        <nav class="border-t border-t-amber-500 mt-4 pt-2">
+            <ul class="flex flex-col items-center gap-2 text-white  sm:flex-row sm:justify-center sm:gap-10">
+                <li class="flex items-center mb-4">
+                    <!-- Teléfono SVG -->
+                    <svg class="w-10 h-8 fill-amber-500 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 22 2 13.93 2 4.5A1 1 0 013 3.5h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z" />
+                    </svg>
+                    +593 95 927 3190
+                </li>
+                <li class="flex items-center mb-4">
+                    <!-- Email SVG -->
+                    <svg class="w-10 h-8 fill-amber-500 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 20V8.99l8 6.99 8-6.99V20H4z" />
+                    </svg>
+                    gina.arteaga.94@gmail.com
+                </li>
+                <li class="flex items-center mb-4">
+                    <!-- Reloj SVG -->
+                    <svg class="w-10 h-8 fill-amber-500 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 1a11 11 0 1011 11A11.013 11.013 0 0012 1zm0 20a9 9 0 119-9 9.01 9.01 0 01-9 9zm.5-13h-1v6l5.25 3.15.5-.86-4.75-2.79z" />
+                    </svg>
+                    Lun-Vie: 8AM-5PM
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
-      <section id="inicio" class="bg-gradient-to-br from-stone-900 via-red-950 to-stone-800 p-4 sm:grid grid-cols-2">
-        <div>
-            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 backdrop-blur-sm mb-4">
+        <section id="inicio" class="bg-gradient-to-br from-stone-900 via-red-950 to-stone-800 p-4 sm:grid grid-cols-2">
+            <div>
+                <span
+                    class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 backdrop-blur-sm mb-4">
                     🎯 Servicios Tributarios Profesionales
-            </span>
-            <div class="flex flex-col">
-          <h1 class="text-5xl text-white">Declaraciones de Impuestos <span class="text-amber-500">Profesionales y Confiables</span></h1>
-          <p class="text-gray-200 p-1 text-lg">Especialista certificado en declaraciones de IVA, Impuesto a la Renta, gestión de RUC, devoluciones especiales y todos los trámites ante el SRI. Tu tranquilidad tributaria es mi prioridad.</p>
-        </div>
-        <div class="flex flex-col font-bold sm:flex-row">
-          <button class="bg-amber-500 mt-4 mb-2 py-3 cursor-pointer rounded-xl sm:w-max h-max py-4 px-4 mr-2 hover:bg-amber-400 transition-colors duration-300 "> Comenzar ahora </button>
-          <button class="bg-white mb-4 py-3 cursor-pointer rounded-xl sm:w-max h-max py-4 px-4 my-4 hover:bg-transparent hover:text-white transition-colors duration-300" > Ver Servicios</button>
-        </div>
-        <div class="grid grid-cols-2 grid-rows-2 gap-4 my-6 sm:flex flex-row mt-15 ">
-          <div class="transition-transform duration-300 hover:scale-105">
-            <p class="flex flex-col bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10 text-gray-200 text-center rounded-md h-max "><span class="text-amber-500 text-3xl">+50</span> Clientes Satisfechos</p>
-          </div>
-          <div class="transition-transform duration-300 hover:scale-105">
-            <p class="flex flex-col bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10 text-white text-center rounded-md h-max"><span class="text-amber-500 text-3xl ">98%</span> Éxito en Trámites </p>
-          </div>
-          <div class="transition-transform duration-300 hover:scale-105">
-            <p class="flex flex-col bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10 text-white text-center rounded-md h-max"><span class="text-amber-500 text-3xl">24h</span> Tiempo Promedio</p>
-          </div>
-          <div class="transition-transform duration-300 hover:scale-105">
-            <p class="flex flex-col bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10 text-white text-center rounded-md h-max"><span class="text-amber-500 text-3xl">+5</span> Años de Experiencia</p>
-          </div>
-        </div>
-        </div>
-        <figure class="flex justify-center items-center p-4 sm:p-6 rounded-lg">
-            <img 
-            class="w-full max-w-xs sm:max-w-md h-auto rounded-2xl object-cover"
-            src="assets/fotoperfil.png"
-            alt="foto-perfil"
-            >
-        </figure>
+                </span>
+                <div class="flex flex-col">
+                    <h1 class="text-5xl text-white">Declaraciones de Impuestos <span
+                            class="text-amber-500">Profesionales y Confiables</span></h1>
+                    <p class="text-gray-200 p-1 text-lg">Especialista certificado en declaraciones de IVA, Impuesto a la
+                        Renta, gestión de RUC, devoluciones especiales y todos los trámites ante el SRI. Tu tranquilidad
+                        tributaria es mi prioridad.</p>
+                </div>
+                <div class="flex flex-col font-bold sm:flex-row">
+                    <button
+                        class="bg-amber-500 mt-4 mb-2 py-3 cursor-pointer rounded-xl sm:w-max h-max py-4 px-4 mr-2 hover:bg-amber-400 transition-colors duration-300 ">
+                        Comenzar ahora </button>
+                    <button
+                        class="bg-white mb-4 py-3 cursor-pointer rounded-xl sm:w-max h-max py-4 px-4 my-4 hover:bg-transparent hover:text-white transition-colors duration-300">
+                        Ver Servicios</button>
+                </div>
+                <div class="grid grid-cols-2 grid-rows-2 gap-4 my-6 sm:flex flex-row mt-15 ">
+                    <div class="transition-transform duration-300 hover:scale-105">
+                        <p
+                            class="flex flex-col bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10 text-gray-200 text-center rounded-md h-max ">
+                            <span class="text-amber-500 text-3xl">+50</span> Clientes Satisfechos</p>
+                    </div>
+                    <div class="transition-transform duration-300 hover:scale-105">
+                        <p
+                            class="flex flex-col bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10 text-white text-center rounded-md h-max">
+                            <span class="text-amber-500 text-3xl ">98%</span> Éxito en Trámites </p>
+                    </div>
+                    <div class="transition-transform duration-300 hover:scale-105">
+                        <p
+                            class="flex flex-col bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10 text-white text-center rounded-md h-max">
+                            <span class="text-amber-500 text-3xl">24h</span> Tiempo Promedio</p>
+                    </div>
+                    <div class="transition-transform duration-300 hover:scale-105">
+                        <p
+                            class="flex flex-col bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10 text-white text-center rounded-md h-max">
+                            <span class="text-amber-500 text-3xl">+5</span> Años de Experiencia</p>
+                    </div>
+                </div>
+            </div>
+            <figure class="flex justify-center items-center p-4 sm:p-6 rounded-lg">
+                <img class="w-full max-w-xs sm:max-w-md h-auto rounded-2xl object-cover" src="assets/fotoperfil.png"
+                    alt="foto-perfil">
+            </figure>
 
 
-      </section>
-      <section id="sobre-mi">
-        <div class="grid grid-cols-1 md:grid-cols-2 bg-gradient-to-br from-stone-900 via-red-950 to-stone-800 p-4 md:p-8 gap-8 items-center">
-          <div class="container mx-auto text-center md:text-left px-2">
+        </section>
+        <section id="sobre-mi">
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 bg-gradient-to-br from-stone-900 via-red-950 to-stone-800 p-4 md:p-8 gap-8 items-center">
+                <div class="container mx-auto text-center md:text-left px-2">
+                    <span
+                        class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 backdrop-blur-sm mb-4">
+                        👩‍💼 Sobre Mi
+                    </span>
+                    <h2
+                        class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent">
+                        Tu Asesora Tributaria de Confianza
+                    </h2>
+                    <p class="text-lg text-stone-300 max-w-2xl mx-auto mb-8">
+                        Soy Gina Arteaga, especialista en servicios tributarios con más de 5 años de experiencia
+                        ayudando a contribuyentes a cumplir con sus obligaciones fiscales de manera eficiente y
+                        confiable.
+                    </p>
+                    <ul class="flex flex-col items-center md:items-start mb-6 space-y-3">
+                        <li class="flex items-center space-x-2">
+                            <img class="h-4 w-4 text-amber-400" src="assets/checkyellow.svg" alt="check-icon">
+                            <span class="text-base text-stone-300">Impuesto a la renta</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <img class="h-4 w-4 text-amber-400" src="assets/checkyellow.svg" alt="check-icon">
+                            <span class="text-base text-stone-300">Declaraciones anuales</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <img class="h-4 w-4 text-amber-400" src="assets/checkyellow.svg" alt="check-icon">
+                            <span class="text-base text-stone-300">Asesoría personalizada</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <img class="h-4 w-4 text-amber-400" src="assets/checkyellow.svg" alt="check-icon">
+                            <span class="text-base text-stone-300">Gestión de RUC y devoluciones</span>
+                        </li>
+                    </ul>
+                    <blockquote
+                        class="text-stone-300 bg-transparent p-6 border-l-4 border-amber-500 italic rounded-md max-w-xl ">
+                        "Mi compromiso es brindar un servicio personalizado y de calidad, asegurando que cada cliente
+                        cumpla con sus obligaciones tributarias de manera eficiente y sin complicaciones."
+                    </blockquote>
+                </div>
+                <div class="flex flex-col items-center  md:justify-center gap-6 px-2 w-full">
+                    <div
+                        class="bg-white px-8 py-4 flex items-center space-x-3 border border-amber-400/30 backdrop-blur-sm rounded-lg shadow-lg w-full max-w-xs">
+                        <img class="bg-amber-500 p-3 rounded-2xl h-12 w-12" src="assets/university_icon.svg"
+                            alt="logo-university">
+                        <span class="text-stone-900 font-bold">Ing. en Contabilidad y Auditoría</span>
+                    </div>
+                    <div
+                        class="bg-white px-8 py-4 flex items-center space-x-3 border border-amber-400/30 backdrop-blur-sm rounded-lg shadow-lg w-full max-w-xs">
+                        <img class="bg-amber-500 p-3 rounded-2xl h-12 w-12" src="assets/achievement_icon.svg"
+                            alt="logo-achievement">
+                        <span class="text-stone-900 font-bold">Especialista en Tributación SRI</span>
+                    </div>
+                    <div
+                        class="bg-white px-8 py-4 flex items-center space-x-3 border border-amber-400/30 backdrop-blur-sm rounded-lg shadow-lg w-full max-w-xs">
+                        <img class="bg-amber-500 p-3 rounded-2xl h-12 w-12" src="assets/work_icon.svg" alt="logo-work">
+                        <span class="text-stone-900 font-bold">Contadora Independiente</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Seccion Servicios-->
+        <section id="servicios" class="py-20 px-4 relative overflow-hidden">
+            <!-- Capas de fondo -->
+            <div class="absolute inset-0 bg-gradient-to-br from-stone-900 via-red-950 to-stone-800"></div>
+            <!-- Degradiente de fondo (usa tonos oscuros de rojo y piedra) -->
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(245,158,11,0.05),transparent_70%)]">
+            </div> <!-- Capa de fondo (luz suave y translúcida) -->
+
+            <!-- Contenedor principal centrado, relativo y superpuesto a las capas -->
+            <div class="container mx-auto relative z-10">
+                <!-- Contenedor con texto centrado y con espacio debajo -->
+                <div class="text-center mb-16">
+                    <!-- Contenedor flex con fondo y borde amarillo translúcido -->
+                    <span
+                        class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 backdrop-blur-sm mb-4">
+                        🎯 Mis Servicios
+                    </span>
+                    <!-- Título grande, en negrita y con un degradado -->
+                    <h2
+                        class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent">
+                        Servicios Tributarios Especializados
+                    </h2>
+                    <!-- Parrafo secundario con ancho maximo para 2xl y centrado -->
+                    <p class="text-xl text-stone-300 max-w-2xl mx-auto">
+                        Ofrezco una gama completa de servicios profesionales para todas tus necesidades tributarias ante
+                        el SRI
+                    </p>
+                </div>
+
+                <!-- Contenedor grid con 2 columnas para md y 3 columnas para lg -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Servicio 1 -->
+                    <!-- Contenedor redondeado, translucido, animado y escable al pasar el mouse-->
+                    <div
+                        class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm hover:scale-105 hover:border-amber-500/50 rounded-lg overflow-hidden">
+                        <div class="p-6">
+                            <!-- Contenedor flex para logo y nombre-->
+                            <div class="flex items-center space-x-3 mb-4">
+                                <!-- Cuadro amarillo, animado y redondeado para logo-->
+                                <div
+                                    class="bg-gradient-to-r from-amber-500 to-yellow-500 p-3 rounded-lg group-hover:scale-110 transition-transform shadow-lg">
+                                    <img class="h-6 w-6 text-stone-900" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/impuestos.svg" alt="tax-icon">
+                                </div>
+                                <h3 class="text-lg font-semibold text-white">Declaración de Impuestos</h3>
+                            </div>
+                            <p class="text-stone-300 mb-4">Declaración y devoluciones de impuestos de manera rápida y
+                                segura</p>
+                            <ul class="space-y-2 mb-6">
+                                <!-- Lista flex para viñeta y descripcion-->
+                                <li class="flex items-center space-x-2">
+                                    <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                    <span class="text-sm text-stone-300">Impuesto a la renta</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                    <span class="text-sm text-stone-300">Declaraciones anuales</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                    <span class="text-sm text-stone-300">Asesoría personalizada</span>
+                                </li>
+                            </ul>
+                            <!-- Boton redondeado amarillo, animado para solicitar servicio-->
+                            <button
+                                type="button"
+                                onclick="document.getElementById('Formulario').scrollIntoView({ behavior: 'smooth' });"
+                                class="w-full px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-stone-900 font-semibold shadow-lg rounded-lg transition-all duration-200">
+                                Solicitar Servicio
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 2 -->
+                    <!-- Contenedor redondeado, translucido, animado y escable al pasar el mouse-->
+                    <div
+                        class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm hover:scale-105 hover:border-amber-500/50 rounded-lg overflow-hidden">
+                        <div class="p-6">
+                            <!-- Contenedor flex para logo y nombre-->
+                            <div class="flex items-center space-x-3 mb-4">
+                                <!-- Cuadro amarillo, animado y redondeado para logo-->
+                                <div
+                                    class="bg-gradient-to-r from-amber-500 to-yellow-500 p-3 rounded-lg group-hover:scale-110 transition-transform shadow-lg">
+                                    <img class="h-6 w-6 text-stone-900" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/card.svg" alt="tax-icon">
+                                </div>
+                                <h3 class="text-lg font-semibold text-white">Declaración del IVA</h3>
+                            </div>
+                            <p class="text-stone-300 mb-4">Gestión completa de declaraciones de IVA mensuales y
+                                semestrales</p>
+                            <ul class="space-y-2 mb-6">
+                                <!-- Lista flex para viñeta y descripcion-->
+                                <li class="flex items-center space-x-2">
+                                    <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                    <span class="text-sm text-stone-300">IVA mensual</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                    <span class="text-sm text-stone-300">IVA semestral</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                    <span class="text-sm text-stone-300">Formularios 104 y 104A</span>
+                                </li>
+                            </ul>
+                            <!-- Boton redondeado amarillo, animado para solicitar servicio-->
+                            <button
+                                type="button"
+                                onclick="document.getElementById('Formulario').scrollIntoView({ behavior: 'smooth' });"
+                                class="w-full px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-stone-900 font-semibold shadow-lg rounded-lg transition-all duration-200">
+                                Solicitar Servicio
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 3 -->
+                    <!-- Contenedor redondeado, translucido, animado y escable al pasar el mouse-->
+                    <div
+                        class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm hover:scale-105 hover:border-amber-500/50 rounded-lg overflow-hidden">
+                        <div class="p-6">
+                            <!-- Contenedor flex para logo y nombre-->
+                            <div class="flex items-center space-x-3 mb-4">
+                                <!-- Cuadro amarillo, animado y redondeado para logo-->
+                                <div
+                                    class="bg-gradient-to-r from-amber-500 to-yellow-500 p-3 rounded-lg group-hover:scale-110 transition-transform shadow-lg">
+                                    <img class="h-6 w-6 text-stone-900" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/note.svg" alt="tax-icon">
+                                </div>
+                                <h3 class="text-lg font-semibold text-white">Anexos de Gastos Personales</h3>
+                            </div>
+                            <p class="text-stone-300 mb-4">Preparación y presentación de anexos para deducción de gastos
+                            </p>
+                            <ul class="space-y-2 mb-6">
+                                <!-- Lista flex para viñeta y descripcion-->
+                                <li class="flex items-center space-x-2">
+                                    <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                    <span class="text-sm text-stone-300">Gastos médicos</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                    <span class="text-sm text-stone-300">Educación</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                    <span class="text-sm text-stone-300">Vivienda</span>
+                                </li>
+                            </ul>
+                            <!-- Boton redondeado amarillo, animado para solicitar servicio-->
+                            <button
+                                type="button"
+                                onclick="document.getElementById('Formulario').scrollIntoView({ behavior: 'smooth' });"
+                                class="w-full px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-stone-900 font-semibold shadow-lg rounded-lg transition-all duration-200">
+                                Solicitar Servicio
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 4 -->
+                    <!-- Contenedor redondeado, translucido, animado y escable al pasar el mouse-->
+                    <div
+                        class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm hover:scale-105 hover:border-amber-500/50 rounded-lg overflow-hidden">
+                        <div class="p-6">
+                            <!-- Contenedor flex para logo y nombre-->
+                            <div class="flex items-center space-x-3 mb-4">
+                                <!-- Cuadro amarillo, animado y redondeado para logo-->
+                                <div
+                                    class="bg-gradient-to-r from-amber-500 to-yellow-500 p-3 rounded-lg group-hover:scale-110 transition-transform shadow-lg">
+                                    <img class="h-6 w-6 text-stone-900" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/people.svg" alt="tax-icon">
+                                </div>
+                                <h3 class="text-lg font-semibold text-white">Devoluciones Especiales</h3>
+                            </div>
+                            <p class="text-stone-300 mb-4">Devoluciones de IVA para personas de 3era edad y
+                                discapacitados</p>
+                            <ul class="space-y-2 mb-6">
+                                <!-- Lista flex para viñeta y descripcion-->
+                                <li class="flex items-center space-x-2">
+                                    <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                    <span class="text-sm text-stone-300">Tercera edad</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                    <span class="text-sm text-stone-300">Discapacitados</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                    <span class="text-sm text-stone-300">Trámites especializados</span>
+                                </li>
+                            </ul>
+                            <!-- Boton redondeado amarillo, animado para solicitar servicio-->
+                            <button
+                            type="button"
+                                onclick="document.getElementById('Formulario').scrollIntoView({ behavior: 'smooth' });"
+                                class="w-full px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-stone-900 font-semibold shadow-lg rounded-lg transition-all duration-200">
+                                Solicitar Servicio
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 5 -->
+                    <!-- Contenedor redondeado, translucido, animado y escable al pasar el mouse-->
+                    <div
+                        class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm hover:scale-105 hover:border-amber-500/50 rounded-lg overflow-hidden">
+                        <div class="p-6">
+                            <!-- Contenedor flex para logo y nombre-->
+                            <div class="flex items-center space-x-3 mb-4">
+                                <!-- Cuadro amarillo, animado y redondeado para logo-->
+                                <div
+                                    class="bg-gradient-to-r from-amber-500 to-yellow-500 p-3 rounded-lg group-hover:scale-110 transition-transform shadow-lg">
+                                    <img class="h-6 w-6 text-stone-900" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/reverse.svg" alt="tax-icon">
+                                    </svg>
+                                </div>
+                                <h3 class="text-lg font-semibold text-white">Devolución de Retenciones</h3>
+                            </div>
+                            <p class="text-stone-300 mb-4">Gestión de devoluciones de retenciones en la fuente</p>
+                            <ul class="space-y-2 mb-6">
+                                <!-- Lista flex para viñeta y descripcion-->
+                                <li class="flex items-center space-x-2">
+                                    <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                    <span class="text-sm text-stone-300">Retenciones IR</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                    <span class="text-sm text-stone-300">Retenciones IVA</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                    <span class="text-sm text-stone-300">Seguimiento de trámites</span>
+                                </li>
+                            </ul>
+                            <!-- Boton redondeado amarillo, animado para solicitar servicio-->
+                            <button
+                            type="button"
+                                onclick="document.getElementById('Formulario').scrollIntoView({ behavior: 'smooth' });"
+                                class="w-full px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-stone-900 font-semibold shadow-lg rounded-lg transition-all duration-200">
+                                Solicitar Servicio
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 6 -->
+                    <!-- Contenedor redondeado, translucido, animado y escable al pasar el mouse-->
+                    <div
+                        class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm hover:scale-105 hover:border-amber-500/50 rounded-lg overflow-hidden">
+                        <div class="p-6">
+                            <!-- Contenedor flex para logo y nombre-->
+                            <div class="flex items-center space-x-3 mb-4">
+                                <!-- Cuadro amarillo, animado y redondeado para logo-->
+                                <div
+                                    class="bg-gradient-to-r from-amber-500 to-yellow-500 p-3 rounded-lg group-hover:scale-110 transition-transform shadow-lg">
+                                    <img class="h-6 w-6 text-stone-900" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/shield.svg" alt="tax-icon">
+                                </div>
+                                <h3 class="text-lg font-semibold text-white">Gestión de RUC</h3>
+                            </div>
+                            <p class="text-stone-300 mb-4">Obtención, actualización y regularización del RUC</p>
+                            <ul class="space-y-2 mb-6">
+                                <!-- Lista flex para viñeta y descripcion-->
+                                <li class="flex items-center space-x-2">
+                                    <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                    <span class="text-sm text-stone-300">Nuevo RUC</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                    <span class="text-sm text-stone-300">Actualización</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
+                                    <span class="text-sm text-stone-300">Firma electrónica</span>
+                                </li>
+                            </ul>
+                            <!-- Boton redondeado amarillo, animado para solicitar servicio-->
+                            <button type="button"
+                                onclick="document.getElementById('Formulario').scrollIntoView({ behavior: 'smooth' });"
+                                class="w-full px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-stone-900 font-semibold shadow-lg rounded-lg transition-all duration-200">
+                                Solicitar Servicio
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Seccion Beneficios-->
+        <section id="beneficios" class="py-20 px-4 relative overflow-hidden">
+            <!-- Capas de fondo -->
+            <div class="absolute inset-0 bg-gradient-to-br from-red-900 via-stone-900 to-red-950"></div>
+            <!-- Degradado de fondo (usa tonos oscuros de rojo y piedra) -->
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_70%,rgba(245,158,11,0.1),transparent_70%)]">
+            </div><!-- Fondo radial (ámbar translúcido) -->
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(153,27,27,0.1),transparent_70%)]">
+            </div><!-- Fondo radial (rojo translúcido) -->
+
+            <!-- Contenedor principal centrado, relativo y superpuesto a las capas -->
+            <div class="container mx-auto relative z-10">
+                <!-- Contenedor con texto centrado y con espacio debajo -->
+                <div class="text-center mb-16">
+                    <!-- Contenedor flex con fondo y borde rojo translúcido -->
+                    <span
+                        class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-500/20 text-red-400 border border-red-500/30 backdrop-blur-sm mb-4">
+                        ⭐ ¿Por qué elegirme?
+                    </span>
+                    <h2
+                        class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-red-200 bg-clip-text text-transparent">
+                        Ventajas Profesionales
+                    </h2>
+                </div>
+
+                <!-- Contenedor grid con dos columnas para md y 4 columnas para lg -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center group">
+                        <!-- Circulo amarillo animado -->
+                        <div
+                            class="bg-gradient-to-r from-amber-500 to-yellow-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform shadow-xl">
+                            <img class="h-8 w-8 text-stone-900" src="assets/time.svg" alt="experiencia-icon">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-white">Ahorro de Tiempo</h3>
+                        <p class="text-stone-300">Procesamos tus declaraciones en tiempo récord</p>
+                    </div>
+
+                    <div class="text-center group">
+                        <div
+                            class="bg-gradient-to-r from-amber-500 to-yellow-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform shadow-xl">
+                            <img class="h-8 w-8 text-stone-900" src="assets/check.svg" alt="experiencia-icon">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-white">100% Confiable</h3>
+                        <p class="text-stone-300">Garantizamos la correcta presentación de tus documentos</p>
+                    </div>
+
+                    <div class="text-center group">
+                        <div
+                            class="bg-gradient-to-r from-amber-500 to-yellow-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform shadow-xl">
+                            <img class="h-8 w-8 text-stone-900" src="assets/experience.svg" alt="experiencia-icon">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-white">Experiencia Comprobada</h3>
+                        <p class="text-stone-300">Más de 5 años ayudando a contribuyentes</p>
+                    </div>
+
+                    <div class="text-center group">
+                        <div
+                            class="bg-gradient-to-r from-amber-500 to-yellow-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform shadow-xl">
+                            <img class="h-8 w-8 text-stone-900" src="assets/thunder.svg" alt="experiencia-icon">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-white">Proceso Ágil</h3>
+                        <p class="text-stone-300">Tecnología de punta para trámites más rápidos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion Casos de exitos recientes -->
+        <section id="casos-exito" class="py-20 px-4 relative overflow-hidden">
+            <!-- Capas de fondo -->
+            <div class="absolute inset-0 bg-gradient-to-br from-stone-900 via-red-900 to-stone-800"></div>
+            <!-- Degradante de fondo (usa tonos oscuros de rojo y piedra) -->
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_60%_40%,rgba(245,158,11,0.1),transparent_70%)]">
+            </div> <!-- Capa de fondo (luz suave y translúcida) -->
+
+            <!-- Contenedor principal centrado, relativo y superpuesto a las capas -->
+            <div class="container mx-auto relative z-10">
+                <!-- Contenedor con texto centrado y con espacio debajo -->
+                <div class="text-center mb-16">
+                    <!-- Contenedor flex con fondo y borde naranja translúcido -->
+                    <span
+                        class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-orange-500/20 text-orange-400 border border-orange-500/30 backdrop-blur-sm mb-4">
+                        📊 Mi Trabajo
+                    </span>
+                    <!-- Título grande, en negrita y con un degradado -->
+                    <h2
+                        class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-orange-200 bg-clip-text text-transparent">
+                        Casos de Éxito Recientes
+                    </h2>
+                    <!-- Parrafo secundario con ancho maximo para 2xl y centrado -->
+                    <p class="text-xl text-stone-300 max-w-2xl mx-auto">
+                        Algunos de los casos exitosos que he manejado para mis clientes
+                    </p>
+                </div>
+
+                <!-- Contenedor grid con 2 columnas para md y 3 columnas para lg -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Caso 1 -->
+                    <!-- Contenedor redondeado, translucido, animado con borde y sombra-->
+                    <div
+                        class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm overflow-hidden hover:border-amber-500/50 rounded-lg">
+                        <!-- Contenedor hijo decorativo de color amarillo  -->
+                        <div class="h-48 bg-gradient-to-br from-amber-600 to-yellow-600 relative">
+                            <!-- Capa de fondo con degradado oscuro -->
+                            <div class="absolute inset-0 bg-gradient-to-br from-black/20 to-black/40"></div>
+                            <!-- Contenedor translucido blanca para indicar el cliente-->
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <span
+                                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-white/20 text-white border border-white/30 backdrop-blur-sm">
+                                    Empresa Comercial
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <!-- Titulo del caso de exito -->
+                            <h3 class="text-lg font-semibold text-white mb-2">Devolución IVA $15,000</h3>
+                            <!-- Descripcion del caso de exito -->
+                            <p class="text-stone-300 mb-4">
+                                Empresa comercial recuperó $15,000 en devolución de IVA en tiempo récord
+                            </p>
+                            <!-- Contenedor flex para tiempo y estado del caso de exito -->
+                            <div class="flex justify-between items-center text-sm text-stone-300">
+                                <span>Tiempo: 15 días</span>
+                                <span class="text-amber-400 font-semibold">✓ Completado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Caso 2 -->
+                    <!-- Contenedor redondeado, translucido, animado con borde y sombra-->
+                    <div
+                        class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm overflow-hidden hover:border-red-500/50 rounded-lg">
+                        <!-- Contenedor hijo decorativo de color rojo  -->
+                        <div class="h-48 bg-gradient-to-br from-red-700 to-red-800 relative">
+                            <!-- Capa de fondo con degradado oscuro -->
+                            <div class="absolute inset-0 bg-gradient-to-br from-black/20 to-black/40"></div>
+                            <!-- Contenedor translucido blanca para indicar el cliente-->
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <span
+                                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-white/20 text-white border border-white/30 backdrop-blur-sm">
+                                    Persona Natural
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <!-- Titulo del caso de exito -->
+                            <h3 class="text-lg font-semibold text-white mb-2">Regularización RUC</h3>
+                            <!-- Descripcion del caso de exito -->
+                            <p class="text-stone-300 mb-4">
+                                Regularización completa de RUC con actualización de actividades económicas
+                            </p>
+                            <!-- Contenedor flex para tiempo y estado del caso de exito -->
+                            <div class="flex justify-between items-center text-sm text-stone-300">
+                                <span>Tiempo: 3 días</span>
+                                <span class="text-amber-400 font-semibold">✓ Completado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Caso 3 -->
+                    <!-- Contenedor redondeado, translucido, animado con borde y sombra-->
+                    <div
+                        class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm overflow-hidden hover:border-yellow-500/50 rounded-lg">
+                        <!-- Contenedor hijo decorativo de color amarillo -->
+                        <div class="h-48 bg-gradient-to-br from-yellow-600 to-amber-700 relative">
+                            <!-- Capa de fondo con degradado oscuro -->
+                            <div class="absolute inset-0 bg-gradient-to-br from-black/20 to-black/40"></div>
+                            <!-- Contenedor translucido blanca para indicar el cliente-->
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <span
+                                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-white/20 text-white border border-white/30 backdrop-blur-sm">
+                                    Adulto Mayor
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <!-- Titulo del caso de exito -->
+                            <h3 class="text-lg font-semibold text-white mb-2">Devolución 3era Edad</h3>
+                            <!-- Descripcion del caso de exito -->
+                            <p class="text-stone-300 mb-4">
+                                Devolución de IVA para adulto mayor por compras de medicamentos y servicios
+                            </p>
+                            <!-- Contenedor flex para tiempo y estado del caso de exito -->
+                            <div class="flex justify-between items-center text-sm text-stone-300">
+                                <span>Tiempo: 20 días</span>
+                                <span class="text-amber-400 font-semibold">✓ Completado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Caso 4 -->
+                    <!-- Contenedor redondeado, translucido, animado con borde y sombra-->
+                    <div
+                        class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm overflow-hidden hover:border-orange-500/50 rounded-lg">
+                        <!-- Contenedor hijo decorativo de color naranja -->
+                        <div class="h-48 bg-gradient-to-br from-orange-600 to-red-600 relative">
+                            <!-- Capa de fondo con degradado oscuro -->
+                            <div class="absolute inset-0 bg-gradient-to-br from-black/20 to-black/40"></div>
+                            <!-- Contenedor translucido blanca para indicar el cliente-->
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <span
+                                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-white/20 text-white border border-white/30 backdrop-blur-sm">
+                                    PYME
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <!-- Titulo del caso de exito -->
+                            <h3 class="text-lg font-semibold text-white mb-2">Declaración Anual IR</h3>
+                            <!-- Descripcion del caso de exito -->
+                            <p class="text-stone-300 mb-4">
+                                Declaración de Impuesto a la Renta con optimización de deducciones
+                            </p>
+                            <!-- Contenedor flex para tiempo y estado del caso de exito -->
+                            <div class="flex justify-between items-center text-sm text-stone-300">
+                                <span>Tiempo: 7 días</span>
+                                <span class="text-amber-400 font-semibold">✓ Completado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Caso 5 -->
+                    <!-- Contenedor redondeado, translucido, animado con borde y sombra-->
+                    <div
+                        class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm overflow-hidden hover:border-amber-500/50 rounded-lg">
+                        <!-- Contenedor hijo decorativo de color amarillo -->
+                        <div class="h-48 bg-gradient-to-br from-amber-700 to-yellow-700 relative">
+                            <!-- Capa de fondo con degradado oscuro -->
+                            <div class="absolute inset-0 bg-gradient-to-br from-black/20 to-black/40"></div>
+                            <!-- Contenedor translucido blanca para indicar el cliente-->
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <span
+                                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-white/20 text-white border border-white/30 backdrop-blur-sm">
+                                    Profesional
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <!-- Titulo del caso de exito -->
+                            <h3 class="text-lg font-semibold text-white mb-2">Anexo Gastos Personales</h3>
+                            <!-- Descripcion del caso de exito -->
+                            <p class="text-stone-300 mb-4">
+                                Optimización de deducciones por gastos personales para profesional independiente
+                            </p>
+                            <!-- Contenedor flex para tiempo y estado del caso de exito -->
+                            <div class="flex justify-between items-center text-sm text-stone-300">
+                                <span>Tiempo: 5 días</span>
+                                <span class="text-amber-400 font-semibold">✓ Completado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Caso 6 -->
+                    <!-- Contenedor redondeado, translucido, animado con borde y sombra-->
+                    <div
+                        class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm overflow-hidden hover:border-red-500/50 rounded-lg">
+                        <!-- Contenedor hijo decorativo de color rojo -->
+                        <div class="h-48 bg-gradient-to-br from-red-600 to-red-700 relative">
+                            <!-- Capa de fondo con degradado oscuro -->
+                            <div class="absolute inset-0 bg-gradient-to-br from-black/20 to-black/40"></div>
+                            <!-- Contenedor translucido blanca para indicar el cliente-->
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <span
+                                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-white/20 text-white border border-white/30 backdrop-blur-sm">
+                                    Startup
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <!-- Titulo del caso de exito -->
+                            <h3 class="text-lg font-semibold text-white mb-2">Firma Electrónica SRI</h3>
+                            <!-- Descripcion del caso de exito -->
+                            <p class="text-stone-300 mb-4">
+                                Implementación completa de firma electrónica para facturación digital
+                            </p>
+                            <!-- Contenedor flex para tiempo y estado del caso de exito -->
+                            <div class="flex justify-between items-center text-sm text-stone-300">
+                                <span>Tiempo: 10 días</span>
+                                <span class="text-amber-400 font-semibold">✓ Completado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Seccion visitame en mi oficina-->
+        <!-- Contenedor principal con fondo degradado y radial -->
+        <section id="vistame" class="py-10 px-2 sm:py-20 sm:px-4 relative overflow-hidden">
+            <!-- Capas de fondo -->
+            <div class="absolute inset-0 bg-gradient-to-br from-stone-900 via-red-950 to-stone-800"></div>
+            <!-- Degradado de fondo (usa tonos oscuros de piedra y rojo) -->
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_40%_60%,rgba(245,158,11,0.1),transparent_70%)]">
+            </div> <!-- Capa de fondo (luz suave y translúcida) -->
+
+            <!-- Contenedor principal centrado, relativo y superpuesto a las capas -->
+            <div class="container mx-auto relative z-10">
+                <!-- Contenedor con texto centrado y con espacio debajo -->
+                <div class="text-center mb-10 sm:mb-16">
+                    <!-- Contenedor flex con fondo y borde ámbar translúcido -->
+                    <span
+                        class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-amber-500/20 text-amber-400 border border-amber-500/30 backdrop-blur-sm mb-4">
+                        📍 Mi Oficina
+                    </span>
+                    <!-- Título grande, en negrita y con un degradado -->
+                    <h2
+                        class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-amber-200 bg-clip-text text-transparent">
+                        Visítame en Mi Oficina
+                    </h2>
+                    <!-- Parrafo secundario con ancho maximo para 2xl y centrado -->
+                    <p class="text-base sm:text-xl text-stone-300 max-w-2xl mx-auto">
+                        Ubicada en el Guayaquil, fácil acceso y estacionamiento disponible
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 items-center">
+                    <div class="space-y-4 sm:space-y-6">
+                        <!-- Dirección -->
+                        <div
+                            class="p-3 sm:p-6 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm shadow-xl rounded-md sm:rounded-lg">
+                            <div class="flex items-start space-x-3 sm:space-x-4">
+                                <div
+                                    class="bg-gradient-to-r from-amber-500 to-yellow-500 p-2 sm:p-3 rounded-md sm:rounded-lg shadow-lg">
+                                    <img class="h-5 w-5 sm:h-6 sm:w-6 text-stone-900" src="assets/location.svg"
+                                        alt="location-icon">
+                                </div>
+                                <div>
+                                    <h3 class="text-base sm:text-xl font-semibold mb-1 sm:mb-2 text-white">Dirección de
+                                        la Oficina</h3>
+                                    <p class="text-stone-300 text-sm sm:text-base mb-1">Avda. Pedro Menéndez Gilbert</p>
+                                    <p class="text-stone-300 text-sm sm:text-base mb-1">Junto a la Cdla. La Atarazana,
+                                        090150, Guayaquil</p>
+                                    <p class="text-stone-300 text-sm sm:text-base">Guayas, Guayaquil, Ecuador</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Horarios -->
+                        <div
+                            class="p-3 sm:p-6 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm shadow-xl rounded-md sm:rounded-lg">
+                            <div class="flex items-start space-x-3 sm:space-x-4">
+                                <div
+                                    class="bg-gradient-to-r from-red-700 to-red-600 p-2 sm:p-3 rounded-md sm:rounded-lg shadow-lg">
+                                    <img class="h-5 w-5 sm:h-6 sm:w-6 text-stone-900" src="assets/reloj.svg"
+                                        alt="location-icon">
+                                </div>
+                                <div>
+                                    <h3 class="text-base sm:text-xl font-semibold mb-1 sm:mb-2 text-white">Horarios de
+                                        Atención</h3>
+                                    <div class="space-y-1 text-stone-300 text-sm sm:text-base">
+                                        <p>Lunes a Viernes: 8:00 AM - 5:00 PM</p>
+                                        <p>Sábados: Cerrado</p>
+                                        <p>Domingos: Cerrado</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contacto -->
+                        <div
+                            class="p-3 sm:p-6 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm shadow-xl rounded-md sm:rounded-lg">
+                            <div class="flex items-start space-x-3 sm:space-x-4">
+                                <div
+                                    class="bg-gradient-to-r from-orange-600 to-amber-600 p-2 sm:p-3 rounded-md sm:rounded-lg shadow-lg">
+                                    <img class="h-5 w-5 sm:h-6 sm:w-6 text-stone-900" src="assets/phone.svg"
+                                        alt="location-icon">
+                                </div>
+                                <div>
+                                    <h3 class="text-base sm:text-xl font-semibold mb-1 sm:mb-2 text-white">Contacto
+                                        Directo</h3>
+                                    <div class="space-y-1 text-stone-300 text-sm sm:text-base">
+                                        <p>📞 Teléfono: +593 95 927 3190</p>
+                                        <p>📱 WhatsApp: +593 95 927 3190</p>
+                                        <p>✉️ Email: gina.arteaga.94@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mapa -->
+                    <div class="relative w-full">
+                        <div
+                            class="bg-gradient-to-br from-amber-500/20 to-yellow-500/20 rounded-xl sm:rounded-2xl p-2 sm:p-4 shadow-2xl backdrop-blur-sm border border-white/20">
+                            <div
+                                class="bg-gradient-to-br from-white/10 to-white/5 rounded-lg sm:rounded-xl overflow-hidden shadow-2xl backdrop-blur-sm border border-white/20 min-h-[250px]">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7973.893070935756!2d-79.88245542587904!3d-2.174017697806684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6dc92475da2f%3A0x8a49d6ab23e428f4!2sSociedad%20de%20Lucha%20contra%20el%20C%C3%A1ncer%20del%20Ecuador!5e0!3m2!1ses!2sec!4v1749346836628!5m2!1ses!2sec"
+                                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade" class="w-full min-h-[250px]"></iframe>
+                            </div>
+                        </div>
+                        <!-- Indicadores de estado -->
+                        <div
+                            class="absolute -top-4 -right-4 bg-gradient-to-r from-amber-500/90 to-yellow-500/90 backdrop-blur-sm rounded-md sm:rounded-lg shadow-xl p-2 sm:p-3 border border-white/20">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 sm:w-3 sm:h-3 bg-white rounded-full animate-pulse"></div>
+                                <span class="text-xs sm:text-sm font-medium text-stone-900">Abierto Ahora</span>
+                            </div>
+                        </div>
+                        <!-- Indicador de estacionamiento -->
+                        <div
+                            class="absolute -bottom-4 -left-4 bg-gradient-to-r from-red-700/90 to-red-600/90 backdrop-blur-sm rounded-md sm:rounded-lg shadow-xl p-2 sm:p-3 border border-white/20">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 sm:w-3 sm:h-3 bg-white rounded-full"></div>
+                                <span class="text-xs sm:text-sm font-medium text-white">Estacionamiento</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Características Adicionales -->
+                <div class="text-center mt-8 sm:mt-12">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">
+                        <div
+                            class="flex items-center justify-center space-x-2 text-stone-300 bg-white/5 backdrop-blur-sm rounded-md sm:rounded-lg p-3 sm:p-4 border border-white/10">
+                            <img class="h-4 w-4 sm:h-5 sm:w-5 text-amber-400" src="assets/checkyellow.svg"
+                                alt="metro-icon">
+                            <span class="text-xs sm:text-base">Fácil Acceso en Transporte Público</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center space-x-2 text-stone-300 bg-white/5 backdrop-blur-sm rounded-md sm:rounded-lg p-3 sm:p-4 border border-white/10">
+                            <img class="h-4 w-4 sm:h-5 sm:w-5 text-amber-400" src="assets/checkyellow.svg"
+                                alt="metro-icon">
+                            <span class="text-xs sm:text-base">Estacionamiento Disponible</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center space-x-2 text-stone-300 bg-white/5 backdrop-blur-sm rounded-md sm:rounded-lg p-3 sm:p-4 border border-white/10">
+                            <img class="h-4 w-4 sm:h-5 sm:w-5 text-amber-400" src="assets/checkyellow.svg"
+                                alt="metro-icon">
+                            <span class="text-xs sm:text-base">Zona Segura y Comercial</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion Contacto -->
+        <section id="contacto" class="py-20 px-4 relative overflow-hidden">
+            <!-- Capas de fondo -->
+            <div class="absolute inset-0 bg-gradient-to-r from-amber-700 via-yellow-600 to-amber-700"></div>
+            <!-- Degradado de fondo (usa tonos oscuros de ámbar y amarillo) -->
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(255,255,255,0.1),transparent_70%)]">
+            </div> <!-- Capa de fondo (luz suave y translúcida) -->
+            <div
+                class="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,rgba(255,255,255,0.05),transparent_70%)]">
+            </div> <!-- Capa de fondo (luz suave y translúcida) -->
+
+            <!-- Contenedor principal centrado, relativo y superpuesto a las capas -->
+            <div class="container mx-auto text-center text-white relative z-10">
+
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Listo para Simplificar tus Trámites Tributarios?</h2>
+                <p class="text-xl mb-8 opacity-90">
+                    Contáctame hoy y obtén una consulta gratuita para todos tus trámites ante el SRI
+                </p>
+                <!-- Contenedor flex para boton llamar ahora y enviar email -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <!-- Boton redondeado de color negro y justificado-->
+                    <button
+                        class="inline-flex items-center justify-center px-8 py-4 bg-stone-900 text-amber-400 hover:bg-stone-800 font-semibold shadow-xl rounded-lg transition-all duration-200">
+                        <img class="mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            src="assets/phonewhite.svg" alt="phone-icon">
+                        Llamar Ahora
+                    </button>
+                    <!-- Boton redondeado de color amarilo y justificado-->
+                    <button
+                        class="inline-flex items-center justify-center px-8 py-4 border border-stone-900 text-stone-900 hover:bg-stone-900 hover:text-amber-400 backdrop-blur-sm rounded-lg transition-all duration-200">
+                        <svg class="mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        Enviar Email
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="Formulario" class="py-20 px-4 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-stone-900 via-red-950 to-stone-800"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_70%,rgba(245,158,11,0.1),transparent_70%)]">
+            </div>
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(153,27,27,0.1),transparent_70%)]">
+            </div>
+
+            <div class="container mx-auto relative z-10">
+                <div class="text-center mb-16">
+                    <span
+                        class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-amber-500/20 text-amber-400 border border-amber-500/30 backdrop-blur-sm mb-4">
+                        📝 Solicita tu Consulta
+                    </span>
+                    <h2
+                        class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-amber-200 bg-clip-text text-transparent">
+                        Formulario de Consulta Tributaria
+                    </h2>
+                    <p class="text-xl text-stone-300 max-w-2xl mx-auto">
+                        Completa el formulario y recibe una cotización personalizada para tus trámites tributarios
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-12 items-start">
+                    <!-- Formulario -->
+                    <div
+                        class="bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm shadow-xl rounded-lg p-8">
+                        <h3 class="text-2xl font-semibold text-white mb-6 text-center">Datos de Consulta</h3>
+
+                        <form id="consultaForm" class="space-y-6">
+                            <!-- Información Personal -->
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="nombre" class="block text-sm font-medium text-stone-300 mb-2">
+                                        Nombre Completo *
+                                    </label>
+                                    <input type="text" id="nombre" name="nombre" required
+                                        class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent backdrop-blur-sm transition-all duration-200"
+                                        placeholder="Ej: María Elena Rodríguez">
+                                </div>
+                                <div>
+                                    <label for="cedula" class="block text-sm font-medium text-stone-300 mb-2">
+                                        Cédula/RUC *
+                                    </label>
+                                    <input type="text" id="cedula" name="cedula" required
+                                        class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent backdrop-blur-sm transition-all duration-200"
+                                        placeholder="Ej: 1234567890"
+                                        oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                                    <span id="cedulaError" class="text-red-400 text-xs"></span>
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-stone-300 mb-2">
+                                        Email *
+                                    </label>
+                                    <input type="email" id="email" name="email" required
+                                        class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent backdrop-blur-sm transition-all duration-200"
+                                        placeholder="tu@email.com">
+                                    <span id="emailError" class="text-red-400 text-xs"></span>
+                                </div>
+                                <div>
+                                    <label for="telefono" class="block text-sm font-medium text-stone-300 mb-2">
+                                        Teléfono *
+                                    </label>
+                                    <input type="tel" id="telefono" name="telefono" required
+                                        class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent backdrop-blur-sm transition-all duration-200"
+                                        placeholder="+593 99 123-4567"
+                                        oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                                    <span id="telefonoError" class="text-red-400 text-xs"></span>
+                                </div>
+                            </div>
+
+                            <!-- Tipo de Cliente -->
+                            <div>
+                                <label for="tipoCliente" class="block text-sm font-medium text-stone-300 mb-2">
+                                    Tipo de Cliente *
+                                </label>
+                                <select id="tipoCliente" name="tipoCliente" required
+                                    class="w-full px-4 py-3 bg-stone-800 border border-white/20 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent backdrop-blur-sm transition-all duration-200">
+                                    <option value="">Selecciona tu tipo de cliente</option>
+                                    <option value="persona-natural">Persona Natural</option>
+                                    <option value="empresa-pequena">Empresa Pequeña (1-10 empleados)</option>
+                                    <option value="empresa-mediana">Empresa Mediana (11-50 empleados)</option>
+                                    <option value="empresa-grande">Empresa Grande (50+ empleados)</option>
+                                    <option value="profesional-independiente">Profesional Independiente</option>
+                                    <option value="adulto-mayor">Adulto Mayor (65+)</option>
+                                    <option value="persona-discapacidad">Persona con Discapacidad</option>
+                                </select>
+                            </div>
+
+                            <!-- Servicio Requerido -->
+                            <div>
+                                <label for="servicio" class="block text-sm font-medium text-stone-300 mb-2">
+                                    Servicio Requerido *
+                                </label>
+                                <select id="servicio" name="servicio" required
+                                    class="w-full px-4 py-3 bg-stone-800 border border-white/20 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent backdrop-blur-sm transition-all duration-200">
+                                    <option value="">Selecciona el servicio que necesitas</option>
+                                    <option value="declaracion-iva" data-precio="50">Declaración de IVA - $50</option>
+                                    <option value="declaracion-renta" data-precio="80">Declaración Impuesto a la Renta -
+                                        $80</option>
+                                    <option value="anexos-gastos" data-precio="40">Anexos de Gastos Personales - $40
+                                    </option>
+                                    <option value="devolucion-iva-tercera-edad" data-precio="60">Devolución IVA Tercera
+                                        Edad - $60</option>
+                                    <option value="devolucion-retenciones" data-precio="70">Devolución de Retenciones -
+                                        $70</option>
+                                    <option value="gestion-ruc" data-precio="30">Gestión de RUC - $30</option>
+                                    <option value="firma-electronica" data-precio="25">Firma Electrónica - $25</option>
+                                    <option value="consultoria-general" data-precio="100">Consultoría General - $100
+                                    </option>
+                                </select>
+                            </div>
+
+                            <!-- Urgencia -->
+                            <div>
+                                <label for="urgencia" class="block text-sm font-medium text-stone-300 mb-2">
+                                    Nivel de Urgencia
+                                </label>
+                                <select id="urgencia" name="urgencia"
+                                    class="w-full px-4 py-3 bg-stone-800 border border-white/20 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent backdrop-blur-sm transition-all duration-200">
+                                    <option value="normal" data-multiplicador="1">Normal (5-7 días) - Sin costo
+                                        adicional</option>
+                                    <option value="urgente" data-multiplicador="1.5">Urgente (2-3 días) - +50% del costo
+                                    </option>
+                                    <option value="express" data-multiplicador="2">Express (24 horas) - +100% del costo
+                                    </option>
+                                </select>
+                            </div>
+
+                            <!-- Descripción -->
+                            <div>
+                                <label for="descripcion" class="block text-sm font-medium text-stone-300 mb-2">
+                                    Descripción de tu Consulta
+                                </label>
+                                <textarea id="descripcion" name="descripcion" rows="4"
+                                    class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent backdrop-blur-sm transition-all duration-200"
+                                    placeholder="Describe brevemente tu situación tributaria o las dudas que tienes..."></textarea>
+                            </div>
+
+                            <!-- Términos y Condiciones -->
+                            <div class="flex items-start space-x-3">
+                                <input type="checkbox" id="terminos" name="terminos" required
+                                    class="mt-1 w-4 h-4 text-amber-500 bg-white/10 border-white/20 rounded focus:ring-amber-500 focus:ring-2">
+                                <label for="terminos" class="text-sm text-stone-300">
+                                    Acepto los <a href="#"
+                                        class="text-amber-400 hover:text-amber-300 underline">términos y condiciones</a>
+                                    y autorizo el tratamiento de mis datos personales para fines de consulta tributaria.
+                                </label>
+                            </div>
+
+                            <!-- Botón de Envío -->
+                            <button type="submit"
+                                class="w-full px-8 py-4 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-stone-900 font-semibold shadow-xl rounded-lg transition-all duration-200 transform hover:scale-105">
+                                <span class="flex items-center justify-center">
+                                    <img class="mr-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        src="assets/send.svg" alt="send-icon">
+                                    Enviar Consulta
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Panel de Información Interactiva -->
+                    <div class="space-y-6">
+                        <!-- Resumen de Cotización -->
+                        <div id="cotizacionPanel"
+                            class="bg-gradient-to-br from-amber-500/20 to-yellow-500/20 border border-amber-500/30 backdrop-blur-sm shadow-xl rounded-lg p-6">
+                            <h3 class="text-xl font-semibold text-white mb-4 flex items-center">
+                                <img class="mr-2 h-5 w-5 text-amber-400" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" src="assets/cotizacion.svg" alt="cotizacion-icon">
+                                Cotización Automática
+                            </h3>
+
+                            <div id="cotizacionContent" class="space-y-4">
+                                <div class="text-center py-8">
+                                    <img class="mx-auto h-12 w-12 text-amber-400 mb-4" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/cotizacion.svg" alt="cotizacion-icon">
+                                    <p class="text-stone-300">Selecciona un servicio para ver la cotización</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Información del Cliente -->
+                        <div id="clienteInfo"
+                            class="bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm shadow-xl rounded-lg p-6">
+                            <h3 class="text-xl font-semibold text-white mb-4 flex items-center">
+                                <img class="mr-2 h-5 w-5 text-blue-400" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" src="assets/person.svg" alt="user-icon">
+                                Información del Cliente
+                            </h3>
+
+                            <div id="clienteContent" class="space-y-3">
+                                <div class="text-center py-8">
+                                    <img class="mx-auto h-12 w-12 text-blue-400 mb-4" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" src="assets/person.svg" alt="user-icon">
+                                    <p class="text-stone-300">Completa tus datos para ver el resumen</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Próximos Pasos -->
+                        <div
+                            class="bg-gradient-to-br from-green-500/20 to-emerald-500/20 border border-green-500/30 backdrop-blur-sm shadow-xl rounded-lg p-6">
+                            <h3 class="text-xl font-semibold text-white mb-4 flex items-center">
+                                <img class="mr-2 h-5 w-5 text-green-400" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" src="assets/checkgreen.svg" alt="checklist-icon">
+
+                                Próximos Pasos
+                            </h3>
+
+                            <div class="space-y-3 text-stone-300">
+                                <div class="flex items-start space-x-3">
+                                    <div
+                                        class="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-semibold mt-0.5">
+                                        1</div>
+                                    <p>Envía el formulario con tus datos</p>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <div
+                                        class="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-semibold mt-0.5">
+                                        2</div>
+                                    <p>Recibirás confirmación en tu email</p>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <div
+                                        class="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-semibold mt-0.5">
+                                        3</div>
+                                    <p>Te contactaré en 24 horas máximo</p>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <div
+                                        class="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-semibold mt-0.5">
+                                        4</div>
+                                    <p>Coordinaremos la cita y documentos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+<!-- Seccion Reseñas -->
+<section id="reseñas" class="py-20 px-4 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-stone-900 via-red-950 to-stone-800"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_40%_60%,rgba(245,158,11,0.1),transparent_70%)]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_60%_40%,rgba(153,27,27,0.1),transparent_70%)]"></div>
+
+    <div class="container mx-auto relative z-10">
+        <div class="text-center mb-16">
             <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 backdrop-blur-sm mb-4">
-              👩‍💼 Sobre Mi
+                ⭐ Reseñas de Clientes
             </span>
             <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent">
-              Tu Asesora Tributaria de Confianza
-            </h2>
-            <p class="text-lg text-stone-300 max-w-2xl mx-auto mb-8">
-              Soy Gina Arteaga, especialista en servicios tributarios con más de 5 años de experiencia ayudando a contribuyentes a cumplir con sus obligaciones fiscales de manera eficiente y confiable.
-            </p>
-            <ul class="flex flex-col items-center md:items-start mb-6 space-y-3">
-              <li class="flex items-center space-x-2">
-                <img class="h-4 w-4 text-amber-400" src="assets/checkyellow.svg" alt="check-icon">
-                <span class="text-base text-stone-300">Impuesto a la renta</span>
-              </li>
-              <li class="flex items-center space-x-2">
-                <img class="h-4 w-4 text-amber-400" src="assets/checkyellow.svg" alt="check-icon">
-                <span class="text-base text-stone-300">Declaraciones anuales</span>
-              </li>
-              <li class="flex items-center space-x-2">
-                <img class="h-4 w-4 text-amber-400" src="assets/checkyellow.svg" alt="check-icon">
-                <span class="text-base text-stone-300">Asesoría personalizada</span>
-              </li>
-              <li class="flex items-center space-x-2">
-                <img class="h-4 w-4 text-amber-400" src="assets/checkyellow.svg" alt="check-icon">
-                <span class="text-base text-stone-300">Gestión de RUC y devoluciones</span>
-              </li>
-            </ul>
-            <blockquote class="text-stone-300 bg-transparent p-6 border-l-4 border-amber-500 italic rounded-md max-w-xl ">
-              "Mi compromiso es brindar un servicio personalizado y de calidad, asegurando que cada cliente cumpla con sus obligaciones tributarias de manera eficiente y sin complicaciones."
-            </blockquote>
-          </div>
-          <div class="flex flex-col items-center  md:justify-center gap-6 px-2 w-full">
-            <div class="bg-white px-8 py-4 flex items-center space-x-3 border border-amber-400/30 backdrop-blur-sm rounded-lg shadow-lg w-full max-w-xs">
-              <img class="bg-amber-500 p-3 rounded-2xl h-12 w-12" src="assets/university_icon.svg" alt="logo-university">
-              <span class="text-stone-900 font-bold">Ing. en Contabilidad y Auditoría</span>
-            </div>
-            <div class="bg-white px-8 py-4 flex items-center space-x-3 border border-amber-400/30 backdrop-blur-sm rounded-lg shadow-lg w-full max-w-xs">
-              <img class="bg-amber-500 p-3 rounded-2xl h-12 w-12" src="assets/achievement_icon.svg" alt="logo-achievement">
-              <span class="text-stone-900 font-bold">Especialista en Tributación SRI</span>
-            </div>
-            <div class="bg-white px-8 py-4 flex items-center space-x-3 border border-amber-400/30 backdrop-blur-sm rounded-lg shadow-lg w-full max-w-xs">
-              <img class="bg-amber-500 p-3 rounded-2xl h-12 w-12" src="assets/work_icon.svg" alt="logo-work">
-              <span class="text-stone-900 font-bold">Contadora Independiente</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    <!--Seccion Servicios-->
-    <section id="servicios" class="py-20 px-4 relative overflow-hidden">
-      <!-- Capas de fondo -->
-        <div class="absolute inset-0 bg-gradient-to-br from-stone-900 via-red-950 to-stone-800"></div> <!-- Degradiente de fondo (usa tonos oscuros de rojo y piedra) -->
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(245,158,11,0.05),transparent_70%)]"></div> <!-- Capa de fondo (luz suave y translúcida) -->
-
-        <!-- Contenedor principal centrado, relativo y superpuesto a las capas -->
-        <div class="container mx-auto relative z-10">
-          <!-- Contenedor con texto centrado y con espacio debajo -->
-            <div class="text-center mb-16">
-              <!-- Contenedor flex con fondo y borde amarillo translúcido -->
-                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 backdrop-blur-sm mb-4">
-                    🎯 Mis Servicios
-                </span>
-                <!-- Título grande, en negrita y con un degradado -->
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent">
-                    Servicios Tributarios Especializados
-                </h2>
-                <!-- Parrafo secundario con ancho maximo para 2xl y centrado -->
-                <p class="text-xl text-stone-300 max-w-2xl mx-auto">
-                    Ofrezco una gama completa de servicios profesionales para todas tus necesidades tributarias ante el SRI
-                </p>
-            </div>
-
-            <!-- Contenedor grid con 2 columnas para md y 3 columnas para lg -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Servicio 1 -->
-                <!-- Contenedor redondeado, translucido, animado y escable al pasar el mouse-->
-                <div class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm hover:scale-105 hover:border-amber-500/50 rounded-lg overflow-hidden">
-                    <div class="p-6">
-                      <!-- Contenedor flex para logo y nombre-->
-                        <div class="flex items-center space-x-3 mb-4">
-                            <!-- Cuadro amarillo, animado y redondeado para logo-->
-                            <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-3 rounded-lg group-hover:scale-110 transition-transform shadow-lg">
-                                <img class="h-6 w-6 text-stone-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/impuestos.svg" alt="tax-icon">
-                            </div>
-                            <h3 class="text-lg font-semibold text-white">Declaración de Impuestos</h3>
-                        </div>
-                        <p class="text-stone-300 mb-4">Declaración y devoluciones de impuestos de manera rápida y segura</p>
-                        <ul class="space-y-2 mb-6">
-                          <!-- Lista flex para viñeta y descripcion-->
-                            <li class="flex items-center space-x-2">
-                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
-                                <span class="text-sm text-stone-300">Impuesto a la renta</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
-                                <span class="text-sm text-stone-300">Declaraciones anuales</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
-                                <span class="text-sm text-stone-300">Asesoría personalizada</span>
-                            </li>
-                        </ul>
-                        <!-- Boton redondeado amarillo, animado para solicitar servicio-->
-                        <button class="w-full px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-stone-900 font-semibold shadow-lg rounded-lg transition-all duration-200">
-                            Solicitar Servicio
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Servicio 2 -->
-                <!-- Contenedor redondeado, translucido, animado y escable al pasar el mouse-->
-                <div class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm hover:scale-105 hover:border-amber-500/50 rounded-lg overflow-hidden">
-                    <div class="p-6">
-                        <!-- Contenedor flex para logo y nombre-->
-                        <div class="flex items-center space-x-3 mb-4">
-                            <!-- Cuadro amarillo, animado y redondeado para logo-->
-                            <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-3 rounded-lg group-hover:scale-110 transition-transform shadow-lg">
-                                <img class="h-6 w-6 text-stone-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/card.svg" alt="tax-icon">
-                            </div>
-                            <h3 class="text-lg font-semibold text-white">Declaración del IVA</h3>
-                        </div>
-                        <p class="text-stone-300 mb-4">Gestión completa de declaraciones de IVA mensuales y semestrales</p>
-                        <ul class="space-y-2 mb-6">
-                          <!-- Lista flex para viñeta y descripcion-->
-                            <li class="flex items-center space-x-2">
-                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
-                                <span class="text-sm text-stone-300">IVA mensual</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
-                                <span class="text-sm text-stone-300">IVA semestral</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
-                                <span class="text-sm text-stone-300">Formularios 104 y 104A</span>
-                            </li>
-                        </ul>
-                        <!-- Boton redondeado amarillo, animado para solicitar servicio-->
-                        <button class="w-full px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-stone-900 font-semibold shadow-lg rounded-lg transition-all duration-200">
-                            Solicitar Servicio
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Servicio 3 -->
-                <!-- Contenedor redondeado, translucido, animado y escable al pasar el mouse--> 
-                <div class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm hover:scale-105 hover:border-amber-500/50 rounded-lg overflow-hidden">
-                    <div class="p-6">
-                        <!-- Contenedor flex para logo y nombre-->
-                        <div class="flex items-center space-x-3 mb-4">
-                            <!-- Cuadro amarillo, animado y redondeado para logo-->
-                            <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-3 rounded-lg group-hover:scale-110 transition-transform shadow-lg">
-                                <img class="h-6 w-6 text-stone-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/note.svg" alt="tax-icon">
-                            </div>
-                            <h3 class="text-lg font-semibold text-white">Anexos de Gastos Personales</h3>
-                        </div>
-                        <p class="text-stone-300 mb-4">Preparación y presentación de anexos para deducción de gastos</p>
-                        <ul class="space-y-2 mb-6">
-                          <!-- Lista flex para viñeta y descripcion-->
-                            <li class="flex items-center space-x-2">
-                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
-                                <span class="text-sm text-stone-300">Gastos médicos</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
-                                <span class="text-sm text-stone-300">Educación</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
-                                <span class="text-sm text-stone-300">Vivienda</span>
-                            </li>
-                        </ul>
-                        <!-- Boton redondeado amarillo, animado para solicitar servicio-->
-                        <button class="w-full px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-stone-900 font-semibold shadow-lg rounded-lg transition-all duration-200">
-                            Solicitar Servicio
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Servicio 4 -->
-                <!-- Contenedor redondeado, translucido, animado y escable al pasar el mouse--> 
-                <div class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm hover:scale-105 hover:border-amber-500/50 rounded-lg overflow-hidden">
-                    <div class="p-6">
-                        <!-- Contenedor flex para logo y nombre-->
-                        <div class="flex items-center space-x-3 mb-4">
-                            <!-- Cuadro amarillo, animado y redondeado para logo-->
-                            <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-3 rounded-lg group-hover:scale-110 transition-transform shadow-lg">
-                                <img class="h-6 w-6 text-stone-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/people.svg" alt="tax-icon">
-                            </div>
-                            <h3 class="text-lg font-semibold text-white">Devoluciones Especiales</h3>
-                        </div>
-                        <p class="text-stone-300 mb-4">Devoluciones de IVA para personas de 3era edad y discapacitados</p>
-                        <ul class="space-y-2 mb-6">
-                            <!-- Lista flex para viñeta y descripcion-->
-                            <li class="flex items-center space-x-2">
-                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
-                                <span class="text-sm text-stone-300">Tercera edad</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
-                                <span class="text-sm text-stone-300">Discapacitados</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
-                                <span class="text-sm text-stone-300">Trámites especializados</span>
-                            </li>
-                        </ul>
-                        <!-- Boton redondeado amarillo, animado para solicitar servicio-->
-                        <button class="w-full px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-stone-900 font-semibold shadow-lg rounded-lg transition-all duration-200">
-                            Solicitar Servicio
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Servicio 5 -->
-                <!-- Contenedor redondeado, translucido, animado y escable al pasar el mouse--> 
-                <div class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm hover:scale-105 hover:border-amber-500/50 rounded-lg overflow-hidden">
-                    <div class="p-6">
-                        <!-- Contenedor flex para logo y nombre-->
-                        <div class="flex items-center space-x-3 mb-4">
-                            <!-- Cuadro amarillo, animado y redondeado para logo-->
-                            <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-3 rounded-lg group-hover:scale-110 transition-transform shadow-lg">
-                                <img class="h-6 w-6 text-stone-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/reverse.svg" alt="tax-icon">
-                                </svg>
-                            </div>
-                            <h3 class="text-lg font-semibold text-white">Devolución de Retenciones</h3>
-                        </div>
-                        <p class="text-stone-300 mb-4">Gestión de devoluciones de retenciones en la fuente</p>
-                        <ul class="space-y-2 mb-6">
-                            <!-- Lista flex para viñeta y descripcion-->
-                            <li class="flex items-center space-x-2">
-                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
-                                <span class="text-sm text-stone-300">Retenciones IR</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
-                                <span class="text-sm text-stone-300">Retenciones IVA</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
-                                <span class="text-sm text-stone-300">Seguimiento de trámites</span>
-                            </li>
-                        </ul>
-                        <!-- Boton redondeado amarillo, animado para solicitar servicio-->
-                        <button class="w-full px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-stone-900 font-semibold shadow-lg rounded-lg transition-all duration-200">
-                            Solicitar Servicio
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Servicio 6 -->
-                <!-- Contenedor redondeado, translucido, animado y escable al pasar el mouse--> 
-                <div class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm hover:scale-105 hover:border-amber-500/50 rounded-lg overflow-hidden">
-                    <div class="p-6">
-                        <!-- Contenedor flex para logo y nombre-->
-                        <div class="flex items-center space-x-3 mb-4">
-                            <!-- Cuadro amarillo, animado y redondeado para logo-->
-                            <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-3 rounded-lg group-hover:scale-110 transition-transform shadow-lg">
-                                <img class="h-6 w-6 text-stone-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/shield.svg" alt="tax-icon">
-                            </div>
-                            <h3 class="text-lg font-semibold text-white">Gestión de RUC</h3>
-                        </div>
-                        <p class="text-stone-300 mb-4">Obtención, actualización y regularización del RUC</p>
-                        <ul class="space-y-2 mb-6">
-                            <!-- Lista flex para viñeta y descripcion-->
-                            <li class="flex items-center space-x-2">
-                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
-                                <span class="text-sm text-stone-300">Nuevo RUC</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
-                                <span class="text-sm text-stone-300">Actualización</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <img class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkyellow.svg" alt="check-icon">
-                                <span class="text-sm text-stone-300">Firma electrónica</span>
-                            </li>
-                        </ul>
-                        <!-- Boton redondeado amarillo, animado para solicitar servicio-->
-                        <button class="w-full px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-stone-900 font-semibold shadow-lg rounded-lg transition-all duration-200">
-                            Solicitar Servicio
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-          <!--Seccion Beneficios-->
-      <section id="beneficios" class="py-20 px-4 relative overflow-hidden">
-        <!-- Capas de fondo -->
-        <div class="absolute inset-0 bg-gradient-to-br from-red-900 via-stone-900 to-red-950"></div> <!-- Degradado de fondo (usa tonos oscuros de rojo y piedra) -->
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_70%,rgba(245,158,11,0.1),transparent_70%)]"></div><!-- Fondo radial (ámbar translúcido) -->
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(153,27,27,0.1),transparent_70%)]"></div><!-- Fondo radial (rojo translúcido) -->
-
-        <!-- Contenedor principal centrado, relativo y superpuesto a las capas -->
-        <div class="container mx-auto relative z-10">
-          <!-- Contenedor con texto centrado y con espacio debajo -->
-            <div class="text-center mb-16">
-              <!-- Contenedor flex con fondo y borde rojo translúcido -->
-                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-500/20 text-red-400 border border-red-500/30 backdrop-blur-sm mb-4">
-                    ⭐ ¿Por qué elegirme?
-                </span>
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-red-200 bg-clip-text text-transparent">
-                    Ventajas Profesionales
-                </h2>
-            </div>
-
-            <!-- Contenedor grid con dos columnas para md y 4 columnas para lg -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="text-center group">
-                  <!-- Circulo amarillo animado -->
-                    <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform shadow-xl">
-                        <img class="h-8 w-8 text-stone-900" src="assets/time.svg" alt="experiencia-icon">
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2 text-white">Ahorro de Tiempo</h3>
-                    <p class="text-stone-300">Procesamos tus declaraciones en tiempo récord</p>
-                </div>
-
-                <div class="text-center group">
-                    <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform shadow-xl">
-                        <img class="h-8 w-8 text-stone-900" src="assets/check.svg" alt="experiencia-icon">
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2 text-white">100% Confiable</h3>
-                    <p class="text-stone-300">Garantizamos la correcta presentación de tus documentos</p>
-                </div>
-
-                <div class="text-center group">
-                    <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform shadow-xl">
-                        <img class="h-8 w-8 text-stone-900" src="assets/experience.svg" alt="experiencia-icon">
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2 text-white">Experiencia Comprobada</h3>
-                    <p class="text-stone-300">Más de 5 años ayudando a contribuyentes</p>
-                </div>
-
-                <div class="text-center group">
-                    <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform shadow-xl">
-                        <img class="h-8 w-8 text-stone-900" src="assets/thunder.svg" alt="experiencia-icon">
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2 text-white">Proceso Ágil</h3>
-                    <p class="text-stone-300">Tecnología de punta para trámites más rápidos</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!-- Seccion Casos de exitos recientes -->
-<section id="casos-exito" class="py-20 px-4 relative overflow-hidden">
-  <!-- Capas de fondo -->
-    <div class="absolute inset-0 bg-gradient-to-br from-stone-900 via-red-900 to-stone-800"></div> <!-- Degradante de fondo (usa tonos oscuros de rojo y piedra) -->
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_60%_40%,rgba(245,158,11,0.1),transparent_70%)]"></div> <!-- Capa de fondo (luz suave y translúcida) -->
-
-    <!-- Contenedor principal centrado, relativo y superpuesto a las capas -->
-    <div class="container mx-auto relative z-10">
-        <!-- Contenedor con texto centrado y con espacio debajo -->
-        <div class="text-center mb-16">
-          <!-- Contenedor flex con fondo y borde naranja translúcido -->
-            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-orange-500/20 text-orange-400 border border-orange-500/30 backdrop-blur-sm mb-4">
-                📊 Mi Trabajo
-            </span>
-            <!-- Título grande, en negrita y con un degradado -->
-            <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-orange-200 bg-clip-text text-transparent">
-                Casos de Éxito Recientes
-            </h2>
-            <!-- Parrafo secundario con ancho maximo para 2xl y centrado -->
-            <p class="text-xl text-stone-300 max-w-2xl mx-auto">
-                Algunos de los casos exitosos que he manejado para mis clientes
-            </p>
-        </div>
-
-        <!-- Contenedor grid con 2 columnas para md y 3 columnas para lg -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Caso 1 -->
-            <!-- Contenedor redondeado, translucido, animado con borde y sombra--> 
-            <div class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm overflow-hidden hover:border-amber-500/50 rounded-lg">
-              <!-- Contenedor hijo decorativo de color amarillo  -->
-                <div class="h-48 bg-gradient-to-br from-amber-600 to-yellow-600 relative">
-                    <!-- Capa de fondo con degradado oscuro -->
-                    <div class="absolute inset-0 bg-gradient-to-br from-black/20 to-black/40"></div>
-                    <!-- Contenedor translucido blanca para indicar el cliente-->
-                    <div class="absolute bottom-4 left-4 text-white">
-                        <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-white/20 text-white border border-white/30 backdrop-blur-sm">
-                            Empresa Comercial
-                        </span>
-                    </div>
-                </div>
-                <div class="p-6">
-                    <!-- Titulo del caso de exito -->
-                    <h3 class="text-lg font-semibold text-white mb-2">Devolución IVA $15,000</h3>
-                    <!-- Descripcion del caso de exito -->
-                    <p class="text-stone-300 mb-4">
-                        Empresa comercial recuperó $15,000 en devolución de IVA en tiempo récord
-                    </p>
-                    <!-- Contenedor flex para tiempo y estado del caso de exito -->
-                    <div class="flex justify-between items-center text-sm text-stone-300">
-                        <span>Tiempo: 15 días</span>
-                        <span class="text-amber-400 font-semibold">✓ Completado</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Caso 2 -->
-            <!-- Contenedor redondeado, translucido, animado con borde y sombra-->
-            <div class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm overflow-hidden hover:border-red-500/50 rounded-lg">
-                <!-- Contenedor hijo decorativo de color rojo  -->
-                <div class="h-48 bg-gradient-to-br from-red-700 to-red-800 relative">
-                    <!-- Capa de fondo con degradado oscuro -->
-                    <div class="absolute inset-0 bg-gradient-to-br from-black/20 to-black/40"></div>
-                    <!-- Contenedor translucido blanca para indicar el cliente-->
-                    <div class="absolute bottom-4 left-4 text-white">
-                        <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-white/20 text-white border border-white/30 backdrop-blur-sm">
-                            Persona Natural
-                        </span>
-                    </div>
-                </div>
-                <div class="p-6">
-                  <!-- Titulo del caso de exito -->
-                    <h3 class="text-lg font-semibold text-white mb-2">Regularización RUC</h3>
-                    <!-- Descripcion del caso de exito -->
-                    <p class="text-stone-300 mb-4">
-                        Regularización completa de RUC con actualización de actividades económicas
-                    </p>
-                    <!-- Contenedor flex para tiempo y estado del caso de exito -->
-                    <div class="flex justify-between items-center text-sm text-stone-300">
-                        <span>Tiempo: 3 días</span>
-                        <span class="text-amber-400 font-semibold">✓ Completado</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Caso 3 -->
-            <!-- Contenedor redondeado, translucido, animado con borde y sombra-->
-            <div class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm overflow-hidden hover:border-yellow-500/50 rounded-lg">
-                <!-- Contenedor hijo decorativo de color amarillo -->
-                <div class="h-48 bg-gradient-to-br from-yellow-600 to-amber-700 relative">
-                    <!-- Capa de fondo con degradado oscuro -->
-                    <div class="absolute inset-0 bg-gradient-to-br from-black/20 to-black/40"></div>
-                    <!-- Contenedor translucido blanca para indicar el cliente-->
-                    <div class="absolute bottom-4 left-4 text-white">
-                        <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-white/20 text-white border border-white/30 backdrop-blur-sm">
-                            Adulto Mayor
-                        </span>
-                    </div>
-                </div>
-                <div class="p-6">
-                    <!-- Titulo del caso de exito -->
-                    <h3 class="text-lg font-semibold text-white mb-2">Devolución 3era Edad</h3>
-                    <!-- Descripcion del caso de exito -->
-                    <p class="text-stone-300 mb-4">
-                        Devolución de IVA para adulto mayor por compras de medicamentos y servicios
-                    </p>
-                    <!-- Contenedor flex para tiempo y estado del caso de exito -->
-                    <div class="flex justify-between items-center text-sm text-stone-300">
-                        <span>Tiempo: 20 días</span>
-                        <span class="text-amber-400 font-semibold">✓ Completado</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Caso 4 -->
-            <!-- Contenedor redondeado, translucido, animado con borde y sombra--> 
-            <div class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm overflow-hidden hover:border-orange-500/50 rounded-lg">
-                <!-- Contenedor hijo decorativo de color naranja -->
-                <div class="h-48 bg-gradient-to-br from-orange-600 to-red-600 relative">
-                    <!-- Capa de fondo con degradado oscuro -->
-                    <div class="absolute inset-0 bg-gradient-to-br from-black/20 to-black/40"></div>
-                    <!-- Contenedor translucido blanca para indicar el cliente-->
-                    <div class="absolute bottom-4 left-4 text-white">
-                        <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-white/20 text-white border border-white/30 backdrop-blur-sm">
-                            PYME
-                        </span>
-                    </div>
-                </div>
-                <div class="p-6">
-                    <!-- Titulo del caso de exito -->
-                    <h3 class="text-lg font-semibold text-white mb-2">Declaración Anual IR</h3>
-                    <!-- Descripcion del caso de exito -->
-                    <p class="text-stone-300 mb-4">
-                        Declaración de Impuesto a la Renta con optimización de deducciones
-                    </p>
-                    <!-- Contenedor flex para tiempo y estado del caso de exito -->
-                    <div class="flex justify-between items-center text-sm text-stone-300">
-                        <span>Tiempo: 7 días</span>
-                        <span class="text-amber-400 font-semibold">✓ Completado</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Caso 5 -->
-            <!-- Contenedor redondeado, translucido, animado con borde y sombra-->
-            <div class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm overflow-hidden hover:border-amber-500/50 rounded-lg">
-                <!-- Contenedor hijo decorativo de color amarillo -->
-                <div class="h-48 bg-gradient-to-br from-amber-700 to-yellow-700 relative">
-                    <!-- Capa de fondo con degradado oscuro -->
-                    <div class="absolute inset-0 bg-gradient-to-br from-black/20 to-black/40"></div>
-                    <!-- Contenedor translucido blanca para indicar el cliente-->
-                    <div class="absolute bottom-4 left-4 text-white">
-                        <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-white/20 text-white border border-white/30 backdrop-blur-sm">
-                            Profesional
-                        </span>
-                    </div>
-                </div>
-                <div class="p-6">
-                    <!-- Titulo del caso de exito -->
-                    <h3 class="text-lg font-semibold text-white mb-2">Anexo Gastos Personales</h3>
-                    <!-- Descripcion del caso de exito -->
-                    <p class="text-stone-300 mb-4">
-                        Optimización de deducciones por gastos personales para profesional independiente
-                    </p>
-                    <!-- Contenedor flex para tiempo y estado del caso de exito -->
-                    <div class="flex justify-between items-center text-sm text-stone-300">
-                        <span>Tiempo: 5 días</span>
-                        <span class="text-amber-400 font-semibold">✓ Completado</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Caso 6 -->
-            <!-- Contenedor redondeado, translucido, animado con borde y sombra-->
-            <div class="group hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm overflow-hidden hover:border-red-500/50 rounded-lg">
-                <!-- Contenedor hijo decorativo de color rojo -->
-                <div class="h-48 bg-gradient-to-br from-red-600 to-red-700 relative">
-                    <!-- Capa de fondo con degradado oscuro -->
-                    <div class="absolute inset-0 bg-gradient-to-br from-black/20 to-black/40"></div>
-                    <!-- Contenedor translucido blanca para indicar el cliente-->
-                    <div class="absolute bottom-4 left-4 text-white">
-                        <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-white/20 text-white border border-white/30 backdrop-blur-sm">
-                            Startup
-                        </span>
-                    </div>
-                </div>
-                <div class="p-6">
-                    <!-- Titulo del caso de exito -->
-                    <h3 class="text-lg font-semibold text-white mb-2">Firma Electrónica SRI</h3>
-                    <!-- Descripcion del caso de exito -->
-                    <p class="text-stone-300 mb-4">
-                        Implementación completa de firma electrónica para facturación digital
-                    </p>
-                    <!-- Contenedor flex para tiempo y estado del caso de exito -->
-                    <div class="flex justify-between items-center text-sm text-stone-300">
-                        <span>Tiempo: 10 días</span>
-                        <span class="text-amber-400 font-semibold">✓ Completado</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-    </div>
-</section>
-
-<!-- Seccion visitame en mi oficina-->
-<!-- Contenedor principal con fondo degradado y radial -->
-<section id="vistame" class="py-10 px-2 sm:py-20 sm:px-4 relative overflow-hidden">
-    <!-- Capas de fondo -->
-    <div class="absolute inset-0 bg-gradient-to-br from-stone-900 via-red-950 to-stone-800"></div> <!-- Degradado de fondo (usa tonos oscuros de piedra y rojo) -->
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_40%_60%,rgba(245,158,11,0.1),transparent_70%)]"></div> <!-- Capa de fondo (luz suave y translúcida) -->
-
-    <!-- Contenedor principal centrado, relativo y superpuesto a las capas -->
-    <div class="container mx-auto relative z-10">
-        <!-- Contenedor con texto centrado y con espacio debajo -->
-        <div class="text-center mb-10 sm:mb-16">
-            <!-- Contenedor flex con fondo y borde ámbar translúcido -->
-            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-amber-500/20 text-amber-400 border border-amber-500/30 backdrop-blur-sm mb-4">
-                📍 Mi Oficina
-            </span>
-            <!-- Título grande, en negrita y con un degradado -->
-            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-amber-200 bg-clip-text text-transparent">
-                Visítame en Mi Oficina
-            </h2>
-            <!-- Parrafo secundario con ancho maximo para 2xl y centrado -->
-            <p class="text-base sm:text-xl text-stone-300 max-w-2xl mx-auto">
-                Ubicada en el Guayaquil, fácil acceso y estacionamiento disponible
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 items-center">
-            <div class="space-y-4 sm:space-y-6">
-                <!-- Dirección -->
-                <div class="p-3 sm:p-6 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm shadow-xl rounded-md sm:rounded-lg">
-                    <div class="flex items-start space-x-3 sm:space-x-4">
-                        <div class="bg-gradient-to-r from-amber-500 to-yellow-500 p-2 sm:p-3 rounded-md sm:rounded-lg shadow-lg">
-                            <img class="h-5 w-5 sm:h-6 sm:w-6 text-stone-900" src="assets/location.svg" alt="location-icon">
-                        </div>
-                        <div>
-                            <h3 class="text-base sm:text-xl font-semibold mb-1 sm:mb-2 text-white">Dirección de la Oficina</h3>
-                            <p class="text-stone-300 text-sm sm:text-base mb-1">Avda. Pedro Menéndez Gilbert</p>
-                            <p class="text-stone-300 text-sm sm:text-base mb-1">Junto a la Cdla. La Atarazana, 090150, Guayaquil</p>
-                            <p class="text-stone-300 text-sm sm:text-base">Guayas, Guayaquil, Ecuador</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Horarios -->
-                <div class="p-3 sm:p-6 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm shadow-xl rounded-md sm:rounded-lg">
-                    <div class="flex items-start space-x-3 sm:space-x-4">
-                        <div class="bg-gradient-to-r from-red-700 to-red-600 p-2 sm:p-3 rounded-md sm:rounded-lg shadow-lg">
-                            <img class="h-5 w-5 sm:h-6 sm:w-6 text-stone-900" src="assets/reloj.svg" alt="location-icon">
-                        </div>
-                        <div>
-                            <h3 class="text-base sm:text-xl font-semibold mb-1 sm:mb-2 text-white">Horarios de Atención</h3>
-                            <div class="space-y-1 text-stone-300 text-sm sm:text-base">
-                                <p>Lunes a Viernes: 8:00 AM - 5:00 PM</p>
-                                <p>Sábados: Cerrado</p>
-                                <p>Domingos: Cerrado</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Contacto -->
-                <div class="p-3 sm:p-6 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm shadow-xl rounded-md sm:rounded-lg">
-                    <div class="flex items-start space-x-3 sm:space-x-4">
-                        <div class="bg-gradient-to-r from-orange-600 to-amber-600 p-2 sm:p-3 rounded-md sm:rounded-lg shadow-lg">
-                            <img class="h-5 w-5 sm:h-6 sm:w-6 text-stone-900" src="assets/phone.svg" alt="location-icon">
-                        </div>
-                        <div>
-                            <h3 class="text-base sm:text-xl font-semibold mb-1 sm:mb-2 text-white">Contacto Directo</h3>
-                            <div class="space-y-1 text-stone-300 text-sm sm:text-base">
-                                <p>📞 Teléfono: +593 95 927 3190</p>
-                                <p>📱 WhatsApp: +593 95 927 3190</p>
-                                <p>✉️ Email: gina.arteaga.94@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mapa -->
-            <div class="relative w-full">
-                <div class="bg-gradient-to-br from-amber-500/20 to-yellow-500/20 rounded-xl sm:rounded-2xl p-2 sm:p-4 shadow-2xl backdrop-blur-sm border border-white/20">
-                    <div class="bg-gradient-to-br from-white/10 to-white/5 rounded-lg sm:rounded-xl overflow-hidden shadow-2xl backdrop-blur-sm border border-white/20 min-h-[250px]">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7973.893070935756!2d-79.88245542587904!3d-2.174017697806684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6dc92475da2f%3A0x8a49d6ab23e428f4!2sSociedad%20de%20Lucha%20contra%20el%20C%C3%A1ncer%20del%20Ecuador!5e0!3m2!1ses!2sec!4v1749346836628!5m2!1ses!2sec"
-                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade" class="w-full min-h-[250px]"></iframe>
-                    </div>
-                </div>
-                <!-- Indicadores de estado -->
-                <div class="absolute -top-4 -right-4 bg-gradient-to-r from-amber-500/90 to-yellow-500/90 backdrop-blur-sm rounded-md sm:rounded-lg shadow-xl p-2 sm:p-3 border border-white/20">
-                    <div class="flex items-center space-x-2">
-                        <div class="w-2 h-2 sm:w-3 sm:h-3 bg-white rounded-full animate-pulse"></div>
-                        <span class="text-xs sm:text-sm font-medium text-stone-900">Abierto Ahora</span>
-                    </div>
-                </div>
-                <!-- Indicador de estacionamiento -->
-                <div class="absolute -bottom-4 -left-4 bg-gradient-to-r from-red-700/90 to-red-600/90 backdrop-blur-sm rounded-md sm:rounded-lg shadow-xl p-2 sm:p-3 border border-white/20">
-                    <div class="flex items-center space-x-2">
-                        <div class="w-2 h-2 sm:w-3 sm:h-3 bg-white rounded-full"></div>
-                        <span class="text-xs sm:text-sm font-medium text-white">Estacionamiento</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Características Adicionales -->
-        <div class="text-center mt-8 sm:mt-12">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">
-                <div class="flex items-center justify-center space-x-2 text-stone-300 bg-white/5 backdrop-blur-sm rounded-md sm:rounded-lg p-3 sm:p-4 border border-white/10">
-                    <img class="h-4 w-4 sm:h-5 sm:w-5 text-amber-400" src="assets/checkyellow.svg" alt="metro-icon">
-                    <span class="text-xs sm:text-base">Fácil Acceso en Transporte Público</span>
-                </div>
-                <div class="flex items-center justify-center space-x-2 text-stone-300 bg-white/5 backdrop-blur-sm rounded-md sm:rounded-lg p-3 sm:p-4 border border-white/10">
-                    <img class="h-4 w-4 sm:h-5 sm:w-5 text-amber-400" src="assets/checkyellow.svg" alt="metro-icon">
-                    <span class="text-xs sm:text-base">Estacionamiento Disponible</span>
-                </div>
-                <div class="flex items-center justify-center space-x-2 text-stone-300 bg-white/5 backdrop-blur-sm rounded-md sm:rounded-lg p-3 sm:p-4 border border-white/10">
-                    <img class="h-4 w-4 sm:h-5 sm:w-5 text-amber-400" src="assets/checkyellow.svg" alt="metro-icon">
-                    <span class="text-xs sm:text-base">Zona Segura y Comercial</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
- <!-- Seccion Contacto -->
-    <section id="contacto" class="py-20 px-4 relative overflow-hidden">
-        <!-- Capas de fondo -->
-        <div class="absolute inset-0 bg-gradient-to-r from-amber-700 via-yellow-600 to-amber-700"></div> <!-- Degradado de fondo (usa tonos oscuros de ámbar y amarillo) -->
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(255,255,255,0.1),transparent_70%)]"></div> <!-- Capa de fondo (luz suave y translúcida) -->
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,rgba(255,255,255,0.05),transparent_70%)]"></div> <!-- Capa de fondo (luz suave y translúcida) -->
- 
-        <!-- Contenedor principal centrado, relativo y superpuesto a las capas -->
-        <div class="container mx-auto text-center text-white relative z-10">
-
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Listo para Simplificar tus Trámites Tributarios?</h2>
-            <p class="text-xl mb-8 opacity-90">
-                Contáctame hoy y obtén una consulta gratuita para todos tus trámites ante el SRI
-            </p>
-            <!-- Contenedor flex para boton llamar ahora y enviar email -->
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <!-- Boton redondeado de color negro y justificado-->
-                <button class="inline-flex items-center justify-center px-8 py-4 bg-stone-900 text-amber-400 hover:bg-stone-800 font-semibold shadow-xl rounded-lg transition-all duration-200">
-                    <img class="mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/phonewhite.svg" alt="phone-icon">
-                    Llamar Ahora
-                </button>
-                <!-- Boton redondeado de color amarilo y justificado-->
-                <button class="inline-flex items-center justify-center px-8 py-4 border border-stone-900 text-stone-900 hover:bg-stone-900 hover:text-amber-400 backdrop-blur-sm rounded-lg transition-all duration-200">
-                    <svg class="mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    Enviar Email
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form Section -->
-<section id="Formulario" class="py-20 px-4 relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-stone-900 via-red-950 to-stone-800"></div>
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_70%,rgba(245,158,11,0.1),transparent_70%)]"></div>
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(153,27,27,0.1),transparent_70%)]"></div>
-
-    <div class="container mx-auto relative z-10">
-        <div class="text-center mb-16">
-            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-amber-500/20 text-amber-400 border border-amber-500/30 backdrop-blur-sm mb-4">
-                📝 Solicita tu Consulta
-            </span>
-            <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-amber-200 bg-clip-text text-transparent">
-                Formulario de Consulta Tributaria
+                Lo que Dicen Nuestros Clientes
             </h2>
             <p class="text-xl text-stone-300 max-w-2xl mx-auto">
-                Completa el formulario y recibe una cotización personalizada para tus trámites tributarios
+                La satisfacción de nuestros clientes es nuestra mejor carta de presentación
             </p>
         </div>
 
-        <div class="grid lg:grid-cols-2 gap-12 items-start">
-            <!-- Formulario -->
-            <div class="bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm shadow-xl rounded-lg p-8">
-                <h3 class="text-2xl font-semibold text-white mb-6 text-center">Datos de Consulta</h3>
+        <!-- Estadísticas de Reseñas -->
+        <div class="grid md:grid-cols-4 gap-6 mb-16">
+            <div class="text-center bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm shadow-xl rounded-lg p-6">
+                <div class="text-3xl font-bold text-yellow-400 mb-2">4.9</div>
+                <div class="flex justify-center mb-2">
+                    <div class="flex space-x-1">
+                        <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="text-stone-300 text-sm">Calificación Promedio</div>
+            </div>
+
+            <div class="text-center bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm shadow-xl rounded-lg p-6">
+                <div class="text-3xl font-bold text-green-400 mb-2">127</div>
+                <div class="text-stone-300 text-sm">Reseñas Totales</div>
+            </div>
+
+            <div class="text-center bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm shadow-xl rounded-lg p-6">
+                <div class="text-3xl font-bold text-blue-400 mb-2">98%</div>
+                <div class="text-stone-300 text-sm">Clientes Satisfechos</div>
+            </div>
+
+            <div class="text-center bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm shadow-xl rounded-lg p-6">
+                <div class="text-3xl font-bold text-amber-400 mb-2">24h</div>
+                <div class="text-stone-300 text-sm">Tiempo de Respuesta</div>
+            </div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+            <!-- Reseñas Existentes -->
+            <div class="space-y-6">
+                <h3 class="text-2xl font-semibold text-white mb-6">Reseñas Recientes</h3>
                 
-                <form id="consultaForm" class="space-y-6">
-                    <!-- Información Personal -->
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label for="nombre" class="block text-sm font-medium text-stone-300 mb-2">
-                                Nombre Completo *
-                            </label>
-                            <input 
-                                type="text" 
-                                id="nombre" 
-                                name="nombre" 
-                                required 
-                                class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent backdrop-blur-sm transition-all duration-200" 
-                                placeholder="Ej: María Elena Rodríguez"
-                            >
+                <!-- Reseña 1 -->
+                <div class="bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm shadow-xl rounded-lg p-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-gradient-to-r from-blue-500 to-blue-600 rounded-full w-12 h-12 flex items-center justify-center text-white font-semibold">
+                            JM
                         </div>
-                        <div>
-                            <label for="cedula" class="block text-sm font-medium text-stone-300 mb-2">
-                                Cédula/RUC *
-                            </label>
-                            <input 
-                                type="text" 
-                                id="cedula" 
-                                name="cedula" 
-                                required 
-                                class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent backdrop-blur-sm transition-all duration-200" 
-                                placeholder="Ej: 1234567890"
-                            >
-                        </div>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-stone-300 mb-2">
-                                Email *
-                            </label>
-                            <input 
-                                type="email" 
-                                id="email" 
-                                name="email" 
-                                required 
-                                class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent backdrop-blur-sm transition-all duration-200" 
-                                placeholder="tu@email.com"
-                            >
-                        </div>
-                        <div>
-                            <label for="telefono" class="block text-sm font-medium text-stone-300 mb-2">
-                                Teléfono *
-                            </label>
-                            <input 
-                                type="tel" 
-                                id="telefono" 
-                                name="telefono" 
-                                required 
-                                class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent backdrop-blur-sm transition-all duration-200" 
-                                placeholder="+593 99 123-4567"
-                            >
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-semibold text-white">Juan Morales</h4>
+                                <div class="flex space-x-1">
+                                    <svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="text-amber-400 text-sm mb-2">Declaración de IVA</div>
+                            <p class="text-stone-300 text-sm">
+                                "Excelente servicio. María me ayudó con mi declaración de IVA y todo fue muy rápido y profesional. 
+                                Definitivamente la recomiendo para cualquier trámite tributario."
+                            </p>
+                            <div class="text-stone-400 text-xs mt-2">Hace 2 días</div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Tipo de Cliente -->
+                <!-- Reseña 2 -->
+                <div class="bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm shadow-xl rounded-lg p-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-gradient-to-r from-pink-500 to-pink-600 rounded-full w-12 h-12 flex items-center justify-center text-white font-semibold">
+                            AS
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-semibold text-white">Ana Sánchez</h4>
+                                <div class="flex space-x-1">
+                                    <svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="h-4 w-4 text-stone-400" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="text-amber-400 text-sm mb-2">Devolución IVA Tercera Edad</div>
+                            <p class="text-stone-300 text-sm">
+                                "Como adulta mayor, necesitaba ayuda con mi devolución de IVA. María fue muy paciente y me explicó 
+                                todo el proceso. Recibí mi devolución en tiempo récord."
+                            </p>
+                            <div class="text-stone-400 text-xs mt-2">Hace 1 semana</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reseña 3 -->
+                <div class="bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm shadow-xl rounded-lg p-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-gradient-to-r from-green-500 to-green-600 rounded-full w-12 h-12 flex items-center justify-center text-white font-semibold">
+                            CR
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-semibold text-white">Carlos Rodríguez</h4>
+                                <div class="flex space-x-1">
+                                    <svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="text-amber-400 text-sm mb-2">Gestión de RUC</div>
+                            <p class="text-stone-300 text-sm">
+                                "Necesitaba actualizar mi RUC para mi nueva empresa. El proceso fue súper rápido y María me 
+                                mantuvo informado en cada paso. Servicio de primera calidad."
+                            </p>
+                            <div class="text-stone-400 text-xs mt-2">Hace 2 semanas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulario de Nueva Reseña -->
+            <div class="bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm shadow-xl rounded-lg p-8">
+                <h3 class="text-2xl font-semibold text-white mb-6 text-center flex items-center justify-center">
+                    <svg class="mr-2 h-6 w-6 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                    </svg>
+                    Deja tu Reseña
+                </h3>
+                
+                <form id="reviewForm" class="space-y-6">
+                    <!-- Nombre del Cliente -->
                     <div>
-                        <label for="tipoCliente" class="block text-sm font-medium text-stone-300 mb-2">
-                            Tipo de Cliente *
+                        <label for="nombreReview" class="block text-sm font-medium text-stone-300 mb-2">
+                            Tu Nombre *
+                        </label>
+                        <input 
+                            type="text" 
+                            id="nombreReview" 
+                            name="nombreReview" 
+                            required 
+                            class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent backdrop-blur-sm transition-all duration-200" 
+                            placeholder="Ej: María González"
+                        >
+                    </div>
+
+                    <!-- Servicio Utilizado -->
+                    <div>
+                        <label for="servicioReview" class="block text-sm font-medium text-stone-300 mb-2">
+                            Servicio que Utilizaste *
                         </label>
                         <select 
-                            id="tipoCliente" 
-                            name="tipoCliente" 
+                            id="servicioReview" 
+                            name="servicioReview" 
                             required 
                             class="w-full px-4 py-3 bg-stone-800 border border-white/20 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent backdrop-blur-sm transition-all duration-200"
                         >
-                            <option value="">Selecciona tu tipo de cliente</option>
-                            <option value="persona-natural">Persona Natural</option>
-                            <option value="empresa-pequena">Empresa Pequeña (1-10 empleados)</option>
-                            <option value="empresa-mediana">Empresa Mediana (11-50 empleados)</option>
-                            <option value="empresa-grande">Empresa Grande (50+ empleados)</option>
-                            <option value="profesional-independiente">Profesional Independiente</option>
-                            <option value="adulto-mayor">Adulto Mayor (65+)</option>
-                            <option value="persona-discapacidad">Persona con Discapacidad</option>
+                            <option value="">Selecciona el servicio que utilizaste</option>
+                            <option value="declaracion-iva">Declaración de IVA</option>
+                            <option value="declaracion-renta">Declaración Impuesto a la Renta</option>
+                            <option value="anexos-gastos">Anexos de Gastos Personales</option>
+                            <option value="devolucion-iva-tercera-edad">Devolución IVA Tercera Edad</option>
+                            <option value="devolucion-retenciones">Devolución de Retenciones</option>
+                            <option value="gestion-ruc">Gestión de RUC</option>
+                            <option value="firma-electronica">Firma Electrónica</option>
+                            <option value="consultoria-general">Consultoría General</option>
                         </select>
                     </div>
 
-                    <!-- Servicio Requerido -->
+                    <!-- Calificación -->
                     <div>
-                        <label for="servicio" class="block text-sm font-medium text-stone-300 mb-2">
-                            Servicio Requerido *
+                        <label for="calificacion" class="block text-sm font-medium text-stone-300 mb-2">
+                            Tu Calificación *
                         </label>
                         <select 
-                            id="servicio" 
-                            name="servicio" 
+                            id="calificacion" 
+                            name="calificacion" 
                             required 
                             class="w-full px-4 py-3 bg-stone-800 border border-white/20 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent backdrop-blur-sm transition-all duration-200"
                         >
-                            <option value="">Selecciona el servicio que necesitas</option>
-                            <option value="declaracion-iva" data-precio="50">Declaración de IVA - $50</option>
-                            <option value="declaracion-renta" data-precio="80">Declaración Impuesto a la Renta - $80</option>
-                            <option value="anexos-gastos" data-precio="40">Anexos de Gastos Personales - $40</option>
-                            <option value="devolucion-iva-tercera-edad" data-precio="60">Devolución IVA Tercera Edad - $60</option>
-                            <option value="devolucion-retenciones" data-precio="70">Devolución de Retenciones - $70</option>
-                            <option value="gestion-ruc" data-precio="30">Gestión de RUC - $30</option>
-                            <option value="firma-electronica" data-precio="25">Firma Electrónica - $25</option>
-                            <option value="consultoria-general" data-precio="100">Consultoría General - $100</option>
+                            <option value="">Selecciona tu nivel de satisfacción</option>
+                            <option value="1">⭐ 1 - Muy Insatisfecho</option>
+                            <option value="2">⭐⭐ 2 - Insatisfecho</option>
+                            <option value="3">⭐⭐⭐ 3 - Neutral</option>
+                            <option value="4">⭐⭐⭐⭐ 4 - Satisfecho</option>
+                            <option value="5">⭐⭐⭐⭐⭐ 5 - Muy Satisfecho</option>
                         </select>
                     </div>
 
-                    <!-- Urgencia -->
+                    <!-- Comentarios -->
                     <div>
-                        <label for="urgencia" class="block text-sm font-medium text-stone-300 mb-2">
-                            Nivel de Urgencia
-                        </label>
-                        <select 
-                            id="urgencia" 
-                            name="urgencia" 
-                            class="w-full px-4 py-3 bg-stone-800 border border-white/20 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent backdrop-blur-sm transition-all duration-200"
-                        >
-                            <option value="normal" data-multiplicador="1">Normal (5-7 días) - Sin costo adicional</option>
-                            <option value="urgente" data-multiplicador="1.5">Urgente (2-3 días) - +50% del costo</option>
-                            <option value="express" data-multiplicador="2">Express (24 horas) - +100% del costo</option>
-                        </select>
-                    </div>
-
-                    <!-- Descripción -->
-                    <div>
-                        <label for="descripcion" class="block text-sm font-medium text-stone-300 mb-2">
-                            Descripción de tu Consulta
+                        <label for="comentarios" class="block text-sm font-medium text-stone-300 mb-2">
+                            Comentarios Adicionales
                         </label>
                         <textarea 
-                            id="descripcion" 
-                            name="descripcion" 
+                            id="comentarios" 
+                            name="comentarios" 
                             rows="4" 
-                            class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent backdrop-blur-sm transition-all duration-200" 
-                            placeholder="Describe brevemente tu situación tributaria o las dudas que tienes..."
+                            class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent backdrop-blur-sm transition-all duration-200" 
+                            placeholder="Cuéntanos sobre tu experiencia con nuestro servicio..."
                         ></textarea>
                     </div>
 
-                    <!-- Términos y Condiciones -->
-                    <div class="flex items-start space-x-3">
-                        <input 
-                            type="checkbox" 
-                            id="terminos" 
-                            name="terminos" 
-                            required 
-                            class="mt-1 w-4 h-4 text-amber-500 bg-white/10 border-white/20 rounded focus:ring-amber-500 focus:ring-2"
-                        >
-                        <label for="terminos" class="text-sm text-stone-300">
-                            Acepto los <a href="#" class="text-amber-400 hover:text-amber-300 underline">términos y condiciones</a> 
-                            y autorizo el tratamiento de mis datos personales para fines de consulta tributaria.
-                        </label>
+                    <!-- Vista Previa de la Reseña -->
+                    <div id="reviewPreview" class="hidden bg-gradient-to-br from-yellow-500/20 to-amber-500/20 border border-yellow-500/30 backdrop-blur-sm rounded-lg p-4">
+                        <h4 class="text-white font-semibold mb-3 flex items-center">
+                            <svg class="mr-2 h-4 w-4 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                            </svg>
+                            Vista Previa de tu Reseña
+                        </h4>
+                        <div id="previewContent" class="space-y-2">
+                            <!-- El contenido se generará dinámicamente -->
+                        </div>
                     </div>
 
                     <!-- Botón de Envío -->
                     <button 
                         type="submit" 
-                        class="w-full px-8 py-4 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-stone-900 font-semibold shadow-xl rounded-lg transition-all duration-200 transform hover:scale-105"
+                        class="w-full px-8 py-4 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-stone-900 font-semibold shadow-xl rounded-lg transition-all duration-200 transform hover:scale-105"
                     >
                         <span class="flex items-center justify-center">
-                            <img class="mr-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/send.svg" alt="send-icon">
-                            Enviar Consulta
+                            <svg class="mr-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                            </svg>
+                            Enviar Reseña
                         </span>
                     </button>
                 </form>
             </div>
-
-            <!-- Panel de Información Interactiva -->
-            <div class="space-y-6">
-                <!-- Resumen de Cotización -->
-                <div id="cotizacionPanel" class="bg-gradient-to-br from-amber-500/20 to-yellow-500/20 border border-amber-500/30 backdrop-blur-sm shadow-xl rounded-lg p-6">
-                    <h3 class="text-xl font-semibold text-white mb-4 flex items-center">
-                        <img  class="mr-2 h-5 w-5 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/cotizacion.svg" alt="cotizacion-icon">
-                        Cotización Automática
-                    </h3>
-                    
-                    <div id="cotizacionContent" class="space-y-4">
-                        <div class="text-center py-8">
-                            <img class="mx-auto h-12 w-12 text-amber-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/cotizacion.svg" alt="cotizacion-icon">
-                            <p class="text-stone-300">Selecciona un servicio para ver la cotización</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Información del Cliente -->
-                <div id="clienteInfo" class="bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm shadow-xl rounded-lg p-6">
-                    <h3 class="text-xl font-semibold text-white mb-4 flex items-center">
-                        <img class="mr-2 h-5 w-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/person.svg" alt="user-icon">
-                        Información del Cliente
-                    </h3>
-                    
-                    <div id="clienteContent" class="space-y-3">
-                        <div class="text-center py-8">
-                            <img class="mx-auto h-12 w-12 text-blue-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/person.svg" alt="user-icon">
-                            <p class="text-stone-300">Completa tus datos para ver el resumen</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Próximos Pasos -->
-                <div class="bg-gradient-to-br from-green-500/20 to-emerald-500/20 border border-green-500/30 backdrop-blur-sm shadow-xl rounded-lg p-6">
-                    <h3 class="text-xl font-semibold text-white mb-4 flex items-center">
-                        <img class="mr-2 h-5 w-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" src="assets/checkgreen.svg" alt="checklist-icon">
-                        
-                        Próximos Pasos
-                    </h3>
-                    
-                    <div class="space-y-3 text-stone-300">
-                        <div class="flex items-start space-x-3">
-                            <div class="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-semibold mt-0.5">1</div>
-                            <p>Envía el formulario con tus datos</p>
-                        </div>
-                        <div class="flex items-start space-x-3">
-                            <div class="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-semibold mt-0.5">2</div>
-                            <p>Recibirás confirmación en tu email</p>
-                        </div>
-                        <div class="flex items-start space-x-3">
-                            <div class="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-semibold mt-0.5">3</div>
-                            <p>Te contactaré en 24 horas máximo</p>
-                        </div>
-                        <div class="flex items-start space-x-3">
-                            <div class="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-semibold mt-0.5">4</div>
-                            <p>Coordinaremos la cita y documentos</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
-</section>
+</section>    
+
     </main>
-    <footer class="flex flex-col bg-stone-700 p-8 sm:grid grid-cols-4 gap-10" >
+
+    <footer class="flex flex-col bg-stone-700 p-8 sm:grid grid-cols-4 gap-10">
         <div class="flex flex-row mb-4">
-            <img class="w-15 h-15 sm:w-14 sm:h-15 rounded-full bg-amber-500 p-2 mr-2 mt-2" src="assets/calculator2.svg" alt="logo-calculator"/>
+            <img class="w-15 h-15 sm:w-14 sm:h-15 rounded-full bg-amber-500 p-2 mr-2 mt-2" src="assets/calculator2.svg"
+                alt="logo-calculator" />
             <div>
                 <h2 class="text-amber-500 mt-2 font-bold text-3xl">TaxPro Ecuador</h2>
-                <h4 class="text-gray-400  text-base">Tu contadora de confianza para todos los trámites tributarios ante el SRI.</h4>
+                <h4 class="text-gray-400  text-base">Tu contadora de confianza para todos los trámites tributarios ante
+                    el SRI.</h4>
             </div>
         </div>
         <div class="mb-4">
@@ -1123,10 +1556,12 @@
         <div class="border-t border-t-amber-500 text-center text-gray-300 mt-4 sm:col-span-4">
             <p>© 2025 Ing. Gina Sofía Arteaga Lara - TaxPro Ecuador. Todos los derechos reservados.</p>
         </div>
-      </div>
+        </div>
     </footer>
 
     <!-- JavaScript para Interactividad -->
-     <script type="module" src="./src/firebase.js"></script>
+    <script type="module" src="./src/firebase.js"></script>
+    <script type="module" src="./src/reseñas.js"></script>
 </body>
+
 </html>
