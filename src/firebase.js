@@ -42,7 +42,7 @@ document.getElementById("consultaForm").addEventListener("submit", async functio
 });
 
 // GET: Leer todas las consultas desde Firebase y se la muestra en consola (prueba del get )
-export async function obtenerConsultas() {
+/*export async function obtenerConsultas() {
   const consultasRef = ref(database, "consultas");
   const snapshot = await get(consultasRef);
   if (snapshot.exists()) {
@@ -50,10 +50,9 @@ export async function obtenerConsultas() {
   } else {
     return {};
   }
-}
+}*/
 
-//Esto es solo para prueba del get
-obtenerConsultas().then(data => console.log("Consultas en Firebase:", data));
+
 
 // --- Comportamiento en vivo para actualizar cotización e info cliente ---
 document.addEventListener('DOMContentLoaded', function() {
