@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const previewContent = document.getElementById('previewContent');
     const contenedorReseña = document.getElementById("contenedor-reseña-firebase");
     const divReferencia = document.getElementById("contenedor-referencia");
-
+    const contenedor_promedio = document.getElementById("contenedor-promedio");
 
     // Función para generar estrellas
     function generarEstrellas(rating) {
@@ -167,11 +167,19 @@ document.addEventListener('DOMContentLoaded', function() {
         get(child(dbRef,"reseñas")).then((snapshot) =>{
             if(snapshot.exists()){
                 const data = snapshot.val();
-                // Convertir a array y agregar el id si lo necesitas
+                // Convertir a array y agregar el id 
                 const reseñasArray = Object.entries(data).map(([id, reseña]) => ({
                     ...reseña,
                     id
                 }));
+                //Hallar el promedio
+                const promedio = obtenerPromedio(reseñasArray);
+                contenedor_promedio.textContent= promedio;
+                const estrellasPromedio = generarEstrellas(Math.floor(promedio));
+                document.getElementById("contenedor-estrellas-promedio").innerHTML=estrellasPromedio;
+                // Cambiar el numero totales de reseñas
+                document.getElementById("contenedor-reseñas-totales").innerHTML=reseñasArray.length 
+
                 // Ordenar por fecha descendente (más reciente primero)
                 reseñasArray.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
                 // Tomar solo las 4 primeras
@@ -190,6 +198,15 @@ document.addEventListener('DOMContentLoaded', function() {
             contenedorReseña.innerHTML="<p class='text-red-500'>Error al cargar reseñas.</p>";
         })
     }
+    function obtenerPromedio(reseñasArray){
+        if(!reseñasArray.length) return 0;
+        let suma=0;
+        for(const r of reseñasArray){
+            suma+=Number(r.calificacion) || 0;
+        }
+        return (suma/reseñasArray.length).toFixed(2);
+    }
+
 
     cargarReseñas();
 });
